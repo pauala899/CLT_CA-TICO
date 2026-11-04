@@ -26,6 +26,9 @@ Antes de qualquer ação:
 | Alterações no GitHub | Branch novo, commit, push e PR como rascunho. O responsável tira do rascunho e faz o merge. O Claude não faz merge sem pedido. |
 | Credenciais | Nunca enviar no chat. Cadastrar como segredo do ambiente. |
 | Publicação | Manual, só depois da aprovação humana. O Claude não publica. |
+| Geração de vídeo | Não há gerador de vídeo por API no momento. O Google Flow só funciona no navegador, com cota grátis de 30 segundos por dia, e quem usa é o responsável. |
+| Montagem | Feita pelo Claude. |
+| Revisão | Toda a estrutura feita, imagem ou vídeo, é revisada antes de ser apresentada, conforme a seção 11 do `CLAUDE.md`. |
 
 Links do Drive:
 
@@ -38,6 +41,8 @@ Links do Drive:
 | Item | Situação |
 |------|----------|
 | Onde ficam artes e vídeos | Proposta: no Drive, fora do GitHub, por serem arquivos pesados. Falta decidir se o Drive substitui o R2 ou se os dois serão usados. Até lá, a seção 11 do `CLAUDE.md` continua pedindo o R2. |
-| Geração de imagens | Pollinations: acesso ainda não testado neste ambiente. Cloudflare Workers AI: precisa de conta e de chave cadastrada como segredo do ambiente. |
+| Geração de imagens | Pollinations: acesso ainda não testado neste ambiente. Cloudflare Workers AI: precisa de conta e de chave cadastrada como segredo do ambiente. Proposta alternativa: o responsável gera as imagens no Google Flow e salva no Drive, e o Claude baixa de lá (ainda não testado). |
+| Storyboard | Proposta: adaptar a skill `gerador-storyboard-video-1min` ao humor da marca, com a estrutura da seção 7 do `CLAUDE.md` e sem texto na imagem. Aguardando confirmação. |
+| Cenas do Remotion | O responsável enviou 8 cenas de exemplo. Proposta: reescrevê-las em formato vertical, com as cores da marca e o texto vindo do roteiro aprovado. Aguardando confirmação. |
 | Primeiro dia | Tema e data a definir pelo responsável. |
 | Seção 9 do briefing | O `CLAUDE.md` pula da seção 8 para a 10. Confirmar se falta conteúdo. |
