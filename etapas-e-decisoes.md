@@ -30,6 +30,7 @@ Antes de qualquer ação:
 | Montagem | Feita pelo Claude. |
 | Formato do reel | Ilustrações paradas animadas com motion graphics (texto animado, balões, transições), sem gerador de vídeo. Os motion graphics são feitos em código pelo Claude, no Remotion, escolha do responsável no lugar do Claude Motion. |
 | Revisão | Toda a estrutura feita, imagem ou vídeo, é revisada antes de ser apresentada, conforme a seção 11 do `CLAUDE.md`. |
+| Gerador de imagens no VPS | Decidido em 2026-11-04. Um agente Hermes no VPS do responsável gera as imagens com um modelo aberto rodando no próprio VPS. O Claude pede as imagens por e-mail e recebe a resposta quando a imagem estiver no Drive. |
 
 Links do Drive:
 
@@ -49,3 +50,4 @@ Links do Drive:
 | Chamada para ação | O briefing não define a frase do fechamento dos reels. O teste termina só com o nome da marca. |
 | Primeiro dia | Tema e data a definir pelo responsável. |
 | Seção 9 do briefing | O `CLAUDE.md` pula da seção 8 para a 10. Confirmar se falta conteúdo. |
+| Protocolo do gerador | Proposta do formato dos e-mails em `base/protocolo-gerador-imagens.md`. Falta definir o e-mail que o Hermes lê, a pasta do Drive, como o Claude baixa a imagem para o ambiente, o modelo usado, se ele aceita imagem de referência e se a licença permite uso comercial. |
