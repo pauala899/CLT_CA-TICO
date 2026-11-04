@@ -24,6 +24,12 @@ npx remotion render ReelTesteCafe out/reel-teste-cafe.mp4 --codec=h264
 
 O vídeo sai em `out/`, que não vai para o GitHub.
 
+A versão com as ilustrações do Pollinations é a composição `ReelTesteCafeIlustrado` (roteiro em `roteiros/teste-cafe-ilustrado.json`). Ela precisa das imagens em `public/artes/teste-cafe/` (`q1.jpg` a `q4.jpg`), que também ficam fora do GitHub:
+
+```bash
+npx remotion render ReelTesteCafeIlustrado out/reel-teste-cafe-ilustrado.mp4 --codec=h264
+```
+
 ## Como funciona
 
 - `roteiros/*.json`: as falas exatas, quem fala, a duração e o movimento de cada quadro. As falas vêm sempre do roteiro aprovado.

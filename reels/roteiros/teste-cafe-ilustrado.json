@@ -1,0 +1,58 @@
+{
+  "titulo": "Teste: o café que nunca chega (ilustrado)",
+  "quadros": [
+    {
+      "papel": "expectativa",
+      "fala": "Hoje vou tomar meu café em paz.",
+      "quemFala": "protagonista",
+      "duracaoSeg": 3.5,
+      "expressao": "calma",
+      "balao": { "estilo": "normal", "topo": 8 },
+      "entrada": { "tipo": "corte", "quadros": 0 },
+      "imagem": "artes/teste-cafe/q1.jpg",
+      "imagemFundo": "#FCDE07",
+      "imagemDesce": 220
+    },
+    {
+      "papel": "interrupcao",
+      "fala": "Tem um minutinho?",
+      "quemFala": "fora-de-cena",
+      "duracaoSeg": 3,
+      "expressao": "surpresa",
+      "balao": { "estilo": "normal", "topo": 10 },
+      "entrada": { "tipo": "deslize", "quadros": 8 },
+      "imagem": "artes/teste-cafe/q2.jpg",
+      "imagemFundo": "#FDDC03",
+      "imagemDesce": 180
+    },
+    {
+      "papel": "escalada",
+      "fala": "É urgente! Preciso pra agora!",
+      "quemFala": "fora-de-cena",
+      "duracaoSeg": 3,
+      "expressao": "panico",
+      "balao": { "estilo": "grito", "topo": 5 },
+      "entrada": { "tipo": "corte", "quadros": 0 },
+      "imagem": "artes/teste-cafe/q3.jpg",
+      "imagemFundo": "#DA1270",
+      "imagemDesce": 200
+    },
+    {
+      "papel": "punchline",
+      "fala": "Meu expediente começou. Minha cafeína, não.",
+      "quemFala": "protagonista",
+      "duracaoSeg": 4,
+      "expressao": "exausta",
+      "balao": { "estilo": "normal", "topo": 4 },
+      "entrada": { "tipo": "corte", "quadros": 0 },
+      "imagem": "artes/teste-cafe/q4.jpg",
+      "imagemFundo": "#F8E03B",
+      "imagemDesce": 200
+    }
+  ],
+  "fechamento": {
+    "texto": "CLT Caótica",
+    "duracaoSeg": 1.8,
+    "entrada": { "tipo": "wipe", "quadros": 10 }
+  }
+}

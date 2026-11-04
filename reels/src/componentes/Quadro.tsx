@@ -45,7 +45,7 @@ const LinhasDeFoco: React.FC<{ frame: number }> = ({ frame }) => {
 };
 
 // Movimento de câmera de cada quadro, conforme o papel na piada.
-const camera = (papel: Papel, frame: number, duracao: number): React.CSSProperties => {
+const camera = (papel: Papel, frame: number, duracao: number, ilustrado: boolean): React.CSSProperties => {
   if (papel === "expectativa") {
     return {
       scale: interpolate(frame, [0, duracao], [1, 1.07], { ...limitar, easing: Easing.inOut(Easing.quad) }),
@@ -58,9 +58,10 @@ const camera = (papel: Papel, frame: number, duracao: number): React.CSSProperti
     };
   }
   if (papel === "escalada") {
-    const forca = interpolate(frame, [0, duracao], [16, 9], limitar);
+    // A ilustração real já vem em close, então o zoom é mais leve que na provisória.
+    const forca = interpolate(frame, [0, duracao], ilustrado ? [10, 6] : [16, 9], limitar);
     return {
-      scale: interpolate(frame, [0, duracao], [1.22, 1.34], limitar),
+      scale: interpolate(frame, [0, duracao], ilustrado ? [1.04, 1.12] : [1.22, 1.34], limitar),
       translate: `${Math.sin(frame * 2.1) * forca}px ${Math.cos(frame * 2.7) * forca}px`,
     };
   }
@@ -83,15 +84,25 @@ export const Quadro: React.FC<{ quadro: TipoQuadro; duracao: number }> = ({ quad
 
   return (
     <AbsoluteFill style={{ ...reticula(FUNDO[quadro.papel]), overflow: "hidden" }}>
-      <AbsoluteFill style={{ ...camera(quadro.papel, frame, duracao), transformOrigin: "50% 58%" }}>
-        {quadro.papel === "escalada" ? <LinhasDeFoco frame={frame} /> : null}
+      <AbsoluteFill
+        style={{
+          ...camera(quadro.papel, frame, duracao, !provisorio),
+          transformOrigin: provisorio ? "50% 58%" : "50% 70%",
+        }}
+      >
+        {provisorio && quadro.papel === "escalada" ? <LinhasDeFoco frame={frame} /> : null}
         {provisorio ? (
           <PersonagemProvisoria expressao={quadro.expressao} frame={frame} />
         ) : (
-          <Img
-            src={staticFile(quadro.imagem as string)}
-            style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
-          />
+          <>
+            {/* O topo é preenchido com a cor de fundo da própria imagem, e a ilustração desce
+                para o balão ficar acima da cabeça, sem cobrir o rosto. */}
+            <AbsoluteFill style={{ backgroundColor: quadro.imagemFundo ?? FUNDO[quadro.papel] }} />
+            <Img
+              src={staticFile(quadro.imagem as string)}
+              style={{ position: "absolute", left: 0, top: quadro.imagemDesce ?? 0, width: "100%", height: "auto" }}
+            />
+          </>
         )}
       </AbsoluteFill>
 

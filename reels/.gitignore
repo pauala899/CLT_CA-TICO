@@ -5,3 +5,6 @@ dist
 
 # Ignore the output video from Git but not videos you import into src/.
 out
+
+# Artes geradas: ficam fora do GitHub (ver etapas-e-decisoes.md)
+public/artes/
