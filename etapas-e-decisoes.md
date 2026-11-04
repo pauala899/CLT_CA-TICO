@@ -32,6 +32,7 @@ Antes de qualquer ação:
 | Revisão | Toda a estrutura feita, imagem ou vídeo, é revisada antes de ser apresentada, conforme a seção 11 do `CLAUDE.md`. |
 | Gerador de imagens no VPS | Decidido em 2026-11-04. Um agente Hermes no VPS do responsável gera as imagens com um modelo aberto rodando no próprio VPS. O Claude pede as imagens por e-mail e recebe a resposta quando a imagem estiver no Drive. |
 | Formato dos prompts de imagem | Pedido do responsável em 2026-11-04: seguir o jeito de escrever do Nano Banana e do GPT Image 2, com frases completas em blocos rotulados (`Use`, `Style`, `Character`, `Scene`, `Camera`, `Composition`, `Constraints`). O modelo fica na seção 3 da skill `storyboard-clt`. |
+| Identificação dos pedidos e nome dos arquivos | Decidido em 2026-11-04, para todos os pedidos enviados pelo Claude: `AAAA-MM-DD_<peça>_<quadro>_v<versão>`, por exemplo `2026-11-05_reel_q1_v1`. A peça é `reel`, `story`, `feed` ou `carrossel1` a `carrossel5`; o quadro segue a ordem de leitura (`q1`, `q2`...); a versão começa em `v1` e sobe a cada refação. O `id` do pedido é o nome do arquivo sem a extensão. A âncora da personagem é `base_ancora_v1`. Detalhes em `base/protocolo-gerador-imagens.md`. |
 
 Links do Drive:
 

@@ -27,7 +27,7 @@ Pasta `CENTRAL IA`, no Meu Drive da conta conectada ao Claude: https://drive.goo
 
 ## Nome dos arquivos
 
-O `id` de cada pedido é também o nome do arquivo, sem a extensão:
+Decidido pelo responsável em 2026-11-04: vale para todos os pedidos enviados pelo Claude. O `id` de cada pedido é também o nome do arquivo, sem a extensão:
 
 `AAAA-MM-DD_<peça>_<quadro>_v<versão>`
 
