@@ -51,8 +51,47 @@ Prompt âncora da personagem: o da skill `storyboard-clt`, sem mudanças.
 
 ## 4. Onde gerar
 
-Neste teste não houve gerador de imagem funcionando (ver `etapas-e-decisoes.md`), então o reel usa ilustrações provisórias desenhadas em código. Quando houver imagens reais, elas entram no lugar das provisórias sem mudar a montagem.
+Primeiro o reel foi montado com ilustrações provisórias desenhadas em código. Depois que o Pollinations foi liberado, as ilustrações foram geradas lá, com a chave secreta e a âncora como referência (ver `etapas-e-decisoes.md`).
+
+| Imagem | Modelo e referência | Semente | Resultado |
+|---|---|---|---|
+| Âncora | `black-forest-labs/flux.1-kontext-pro`, sem referência | 1101 | Bateu com a ficha. Saiu sorrindo. |
+| Quadro 1 | `flux.1-kontext-pro`, referência: âncora | 2201 | Aprovado na revisão. |
+| Quadro 2 | `flux.1-kontext-pro`, referência: âncora | 2202 | Aprovado na revisão. |
+| Quadro 3 | `flux.1-kontext-pro`, referência: âncora | 2203 | A personagem cospe o café, diferente do storyboard. Aguardando aprovação. |
+| Quadro 4, passo 1 | `flux.1-kontext-pro`, referência: âncora | 2214 | Pose certa, mas ainda sorrindo. |
+| Quadro 4, passo 2 | `black-forest-labs/flux.2-klein-4b`, referência: passo 1 | 2316 | Expressão de exausta corrigida. Aprovado na revisão. |
+
+O tamanho pedido foi 768x1344. O `flux.1-kontext-pro` devolveu 800x1328, e o `flux.2-klein-4b`, 768x1344.
+
+### Prompts usados
+
+Âncora:
+
+> Brazilian comic and meme style digital illustration, clean bold ink lines, flat colors, high contrast, palette of yellow, magenta, black and white. Adult woman with a delicate face, big expressive brown eyes, round black glasses, soft freckles on nose and cheeks, dark eyebrows, brown hair in a big high voluminous bun with loose strands. Character reference portrait from the waist up, facing the viewer, friendly neutral smile, wearing a simple magenta blouse, plain flat yellow background.
+
+Início comum dos quadros 1 a 3 e do passo 1 do quadro 4:
+
+> Keep the exact same character from the reference image: same delicate face, big brown eyes, round black glasses, freckles, dark eyebrows, brown high messy bun, same comic ink art style and flat colors.
+
+Cenas:
+
+- **Quadro 1:** She sits at an office desk holding a coffee mug with both hands, eyes half closed, peaceful smile, calm morning, a little steam rising from the mug. Medium shot, vertical 9:16, character in the lower two thirds, empty plain yellow space in the upper third.
+- **Quadro 2:** Same office desk. She freezes with the coffee mug halfway to her mouth, wide surprised eyes looking to the right side of the frame, as if someone just called her name. Medium shot, vertical 9:16, character in the lower two thirds, empty plain yellow space in the upper third.
+- **Quadro 3:** Close-up of her face in total panic, eyes huge behind the round glasses, eyebrows raised, mouth open, coffee splashing out of the mug, comic speed lines, magenta background. Vertical 9:16, empty plain space in the upper third.
+- **Quadro 4, passo 1:** She stares straight at the viewer with a tired, deadpan, unamused expression: heavy half-closed eyelids, dark circles under her eyes, flat straight mouth, no smile at all. She is slumped over the office desk with her cheek squished against her hand, the forgotten coffee mug beside her. Medium shot, vertical 9:16, plain yellow background.
+- **Quadro 4, passo 2** (sem o início comum): Edit only her facial expression and keep everything else identical. Make her look exhausted and deadpan: heavy droopy eyelids half covering her eyes, dark tired circles under the eyes, eyebrows flat and slightly lowered, mouth a flat straight line with no smile. Keep the same pose, glasses, hair bun, clothes, desk, coffee mug, colors and comic ink style.
+
+Todos terminam com a frase de bloqueio:
+
+> No text, no letters, no words, no numbers, no speech balloons, no logos, no watermark.
 
 ## 5. Revisão
 
 Checklist por quadro da skill `storyboard-clt`, e depois a revisão completa da seção 11 do `CLAUDE.md`.
+
+Resultado da revisão das ilustrações:
+
+- A personagem bateu com a ficha nos quatro quadros, e nenhuma imagem tem texto, logotipo ou marca d'água.
+- O quadro 3 ficou diferente do storyboard (ela cospe o café) e o quadro 4 precisou ser refeito (saiu sorrindo).
+- O gerador não deixou o espaço livre pedido no topo. No reel, a ilustração desce e o topo é preenchido com a cor de fundo da imagem, para o balão não cobrir o rosto.

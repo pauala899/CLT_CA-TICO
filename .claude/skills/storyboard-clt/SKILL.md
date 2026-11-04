@@ -59,7 +59,7 @@ Movimentos sugeridos por papel, feitos em motion graphics no Remotion:
 
 **Prompt âncora da personagem.** Gere uma vez e use como imagem de referência em todas as cenas:
 
-> Brazilian comic and meme style digital illustration, clean bold ink lines, flat colors, high contrast, palette of yellow, magenta, black and white. Adult woman with a delicate face, big expressive brown eyes, round black glasses, soft freckles on nose and cheeks, dark eyebrows, brown hair in a big high voluminous bun with loose strands. Exaggerated facial expression that reads instantly on a small screen.
+> Brazilian comic and meme style digital illustration, clean bold ink lines, flat colors, high contrast, palette of yellow, magenta, black and white. Adult woman with a delicate face, big expressive brown eyes, round black glasses, soft freckles on nose and cheeks, dark eyebrows, brown hair in a big high voluminous bun with loose strands. Character reference portrait from the waist up, facing the viewer, neutral relaxed expression with closed mouth, plain flat background.
 
 **Um prompt por quadro**, com: referência à imagem âncora, cena, expressão, enquadramento, proporção, espaço livre para o balão (por exemplo, "empty plain space in the upper third") e a frase de bloqueio no fim.
 
@@ -68,6 +68,13 @@ Movimentos sugeridos por papel, feitos em motion graphics no Remotion:
 > No text, no letters, no words, no numbers, no speech balloons, no logos, no watermark.
 
 Os prompts ficam em inglês porque os geradores de imagem costumam seguir melhor as instruções nesse idioma. As falas ficam sempre em português.
+
+**Lições do primeiro teste (2026-11-04):**
+
+- O modelo com referência copia a expressão da âncora. Por isso a âncora tem expressão neutra: no teste, uma âncora sorrindo fez a personagem sorrir até na punchline.
+- Para mudar só a expressão de um quadro, use o próprio quadro como referência e uma instrução de edição, começando por "Edit only her facial expression and keep everything else identical."
+- Os geradores não respeitaram o pedido de espaço livre no topo. No reel, isso se resolve descendo a ilustração (`imagemDesce`) e preenchendo o topo com a cor de fundo da imagem (`imagemFundo`), nos arquivos de `reels/roteiros/`.
+- Se o pedido passar do tempo limite, repita exatamente o mesmo pedido: a geração continua no servidor e não é cobrada de novo.
 
 ### 4. Onde gerar
 

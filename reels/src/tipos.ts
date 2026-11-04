@@ -23,6 +23,10 @@ export type Quadro = {
   entrada: Entrada;
   // Caminho da ilustração dentro de public/. Sem ele, usa a ilustração provisória.
   imagem?: string;
+  // Cor que preenche o espaço acima da ilustração (a cor de fundo da própria imagem).
+  imagemFundo?: string;
+  // Quantos pixels a ilustração desce, para abrir espaço para o balão acima da cabeça.
+  imagemDesce?: number;
 };
 
 export type Reel = {
