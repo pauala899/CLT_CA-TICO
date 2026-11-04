@@ -28,6 +28,7 @@ Antes de qualquer ação:
 | Publicação | Manual, só depois da aprovação humana. O Claude não publica. |
 | Geração de vídeo | Não há gerador de vídeo por API no momento. O Google Flow só funciona no navegador, com cota grátis de 30 segundos por dia, e quem usa é o responsável. |
 | Montagem | Feita pelo Claude. |
+| Formato do reel | Ilustrações paradas animadas com motion graphics (texto animado, balões, transições), sem gerador de vídeo. |
 | Revisão | Toda a estrutura feita, imagem ou vídeo, é revisada antes de ser apresentada, conforme a seção 11 do `CLAUDE.md`. |
 
 Links do Drive:
