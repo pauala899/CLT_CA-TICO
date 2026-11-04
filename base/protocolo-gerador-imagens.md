@@ -63,6 +63,7 @@ Corpo em texto puro, um campo por linha. Tudo o que vem depois da linha `prompt:
 
 ```
 id: 2026-11-05_reel_q1_v1
+projeto: CLT Caótica
 proporcao: 9:16
 largura: 1080
 altura: 1920
@@ -83,25 +84,23 @@ Constraints: The image contains no text of any kind. ... No text, no letters, no
 
 ## Resposta (agente para Claude)
 
-Na mesma conversa do pedido.
-
-Imagem pronta, com o assunto `[CLT-PRONTO] <id>`:
+Na mesma conversa do pedido, com o assunto `[CLT-PRONTO] <id>`. Formato definido pelo responsável em 2026-11-04:
 
 ```
 id: 2026-11-05_reel_q1_v1
-link: <link do arquivo no Drive>
-modelo: <nome do modelo usado>
-semente: <semente usada>
-largura: <largura real>
-altura: <altura real>
+arquivo: 2026-11-05_reel_q1_v1.png
+projeto: CLT Caótica
+link: <link direto do arquivo no Google Drive>
+status: concluido
 ```
 
-Erro, com o assunto `[CLT-ERRO] <id>`:
+- `id`: o ID do pedido.
+- `arquivo`: o nome exato da imagem salva.
+- `projeto`: o projeto do pedido.
+- `link`: o link direto da imagem no Google Drive.
+- `status`: `concluido`.
 
-```
-id: 2026-11-05_reel_q1_v1
-motivo: <o que deu errado>
-```
+Se der erro, o assunto é `[CLT-ERRO] <id>`, com `status: erro` e uma linha `motivo:` explicando o que deu errado.
 
 ## Do lado do Claude
 
