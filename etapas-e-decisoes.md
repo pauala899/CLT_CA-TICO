@@ -42,8 +42,10 @@ Links do Drive:
 | Item | Situação |
 |------|----------|
 | Onde ficam artes e vídeos | Proposta: no Drive, fora do GitHub, por serem arquivos pesados. Falta decidir se o Drive substitui o R2 ou se os dois serão usados. Até lá, a seção 11 do `CLAUDE.md` continua pedindo o R2. |
-| Geração de imagens | Pollinations: acesso ainda não testado neste ambiente. Cloudflare Workers AI: precisa de conta e de chave cadastrada como segredo do ambiente. Proposta alternativa: o responsável gera as imagens no Google Flow e salva no Drive, e o Claude baixa de lá (ainda não testado). |
-| Storyboard | Proposta: adaptar a skill `gerador-storyboard-video-1min` ao humor da marca, com a estrutura da seção 7 do `CLAUDE.md` e sem texto na imagem. Aguardando confirmação. |
-| Cenas do Remotion | O responsável enviou 8 cenas de exemplo. Proposta: reescrevê-las em formato vertical, com as cores da marca e o texto vindo do roteiro aprovado. Aguardando confirmação. |
+| Geração de imagens | Testado em 2026-11-04. Pollinations: o endereço novo (`gen.pollinations.ai`), que aceita a chave `POLLINATIONS_API_KEY`, está bloqueado pela rede do ambiente; o endereço antigo (`image.pollinations.ai`) só lista o modelo `sana` e não gerou nenhuma imagem. Cloudflare: a chave `CLOUDFLARE_API_TOKEN` foi recusada ("Invalid API Token"); pelo formato (64 caracteres hexadecimais), parece ser a chave secreta do R2, não um token do Workers AI, e falta o ID da conta. Alternativa: o responsável gera as imagens no Google Flow e salva no Drive (ainda não testado). |
+| Storyboard | Skill criada em `.claude/skills/storyboard-clt/` e usada no teste `testes/2026-11-04-reel-cafe/storyboard.md`. Aguardando aprovação do conteúdo. |
+| Reel de teste | Projeto do Remotion criado em `reels/`, com o teste da piada do café (ilustrações provisórias). Das 8 cenas de exemplo enviadas, foram aproveitados os efeitos (surgimento, deslize, mola), não o código. Aguardando aprovação do visual e do movimento. |
+| Cores e fontes | Proposta usada no teste: amarelo `#FFD60A`, magenta `#E6007E`, preto `#111111` e branco `#FFFFFF`; Bangers nas falas e Anton nos títulos, ambas de licença aberta (SIL OFL). Aguardando aprovação. |
+| Chamada para ação | O briefing não define a frase do fechamento dos reels. O teste termina só com o nome da marca. |
 | Primeiro dia | Tema e data a definir pelo responsável. |
 | Seção 9 do briefing | O `CLAUDE.md` pula da seção 8 para a 10. Confirmar se falta conteúdo. |
