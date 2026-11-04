@@ -4,6 +4,16 @@ Proposta de 2026-11-04. Vale depois da aprovação do responsável.
 
 As imagens são geradas por agentes Hermes no VPS do responsável, com um modelo aberto rodando no próprio VPS. Pode haver vários agentes, cada um com o seu e-mail. O Claude manda cada pedido por e-mail para um agente, e o agente responde quando a imagem estiver no Drive. O Claude baixa a imagem do Drive para montar os reels e os posts do Instagram.
 
+## Agentes
+
+O responsável está montando a estrutura dos agentes. Os e-mails não ficam neste arquivo, porque o repositório é público.
+
+| Agente | Limite por dia | Modelo | Aceita imagem de referência? |
+|---|---|---|---|
+| Agente de imagem 01 | 5 imagens | a informar | a informar |
+
+O Claude divide os pedidos do dia entre os agentes sem passar do limite de nenhum. Os quadros que precisam manter a personagem igual vão para os agentes que aceitam imagem de referência.
+
 ## Pastas no Drive
 
 Pasta `CENTRAL IA`, no Meu Drive da conta conectada ao Claude: https://drive.google.com/drive/folders/1bFvV3eG5gKi9CIY6MdIHmSeJMt0UW6EN
@@ -100,7 +110,9 @@ motivo: <o que deu errado>
 
 ## A definir
 
-- O e-mail de cada agente e como dividir os pedidos entre eles.
+- Os outros agentes, com o limite por dia, o modelo e se aceitam imagem de referência.
+- Onde guardar o e-mail de cada agente fora do repositório, por exemplo num arquivo em `04_CONTROLE`.
+- De qual conta saem os pedidos. O Gmail conectado ao Claude é de uma conta diferente da do Drive: ou o Gmail do Claude passa a ser a mesma conta do Drive, ou os agentes aceitam os pedidos vindos da conta conectada hoje.
 - Se o uso proposto para `01_PEDIDOS`, `03_ENTREGAS` e `04_CONTROLE` está certo.
 - Como o Claude baixa a imagem para o ambiente. Pelo conector do Drive, a imagem chega como texto codificado. Falta testar com a primeira imagem real se isso funciona. Se não funcionar, as opções são liberar na rede do ambiente o endereço do VPS, com o agente mandando um link direto, ou liberar o download do Drive, com o arquivo compartilhado por link.
 - Como o Claude envia arquivos grandes, como os reels prontos, para `03_ENTREGAS`. O conector do Drive tem o mesmo limite.
