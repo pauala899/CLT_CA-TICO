@@ -220,3 +220,9 @@ Atuar como assistente técnico e editorial do projeto.
 - Entregar resultados concretos e verificáveis.
 
 Objetivo final: transformar a CLT Caótica em uma operação de conteúdo consistente, organizada e escalável, com humor reconhecível, artes bem acabadas e comunicação sem erros.
+
+## Etapas e decisões
+
+Antes de agir, leia o arquivo abaixo. Ele registra o que já foi decidido, o que está pendente e a regra de conferir antes de presumir uma ação.
+
+@etapas-e-decisoes.md
