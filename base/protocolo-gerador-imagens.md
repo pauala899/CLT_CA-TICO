@@ -55,6 +55,24 @@ O pedido traz a proporção e o tamanho desejado. Se o modelo não gerar esse ta
 - Para refazer uma imagem, o Claude manda um pedido novo, com a versão seguinte no `id`.
 - O Claude só pede imagens de um storyboard aprovado e revisa cada imagem antes de usar.
 
+## Regras do Gerenciador V4
+
+O Gerenciador V4 é quem coordena os agentes de imagem. Regras definidas pelo responsável em 2026-11-04:
+
+1. Não alterar os nomes definidos pelo Claude.
+2. Não confundir versões diferentes.
+3. Não sobrescrever imagens anteriores.
+4. Preservar a âncora da personagem.
+5. Registrar cada imagem recebida e processada.
+
+Como cada regra se aplica no protocolo (proposta do Claude):
+
+- **Nomes:** o arquivo salvo tem exatamente o nome do campo `arquivo`, e a resposta repete o mesmo `id`.
+- **Versões:** `_v1`, `_v2` e as seguintes são imagens diferentes. Cada pedido gera só a versão pedida.
+- **Sem sobrescrever:** se já existir em `02_IMAGENS` um arquivo com o mesmo nome, o agente não grava por cima e responde `[CLT-ERRO]` com `motivo: arquivo já existe`.
+- **Âncora:** os arquivos `base_ancora_*` nunca são editados, movidos nem apagados. Uma âncora nova sai sempre com a versão seguinte.
+- **Registro:** cada imagem recebida e processada entra na planilha de `04_CONTROLE`, com `id`, arquivo, agente, data e status.
+
 ## Pedido (Claude para o agente)
 
 Assunto: `[CLT-PEDIDO] <id>`
