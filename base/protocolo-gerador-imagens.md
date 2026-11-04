@@ -17,7 +17,7 @@ O gerador de imagens é um agente Hermes no VPS do responsável, que gera as ima
 
 Assunto: `[CLT-PEDIDO] <id>`
 
-Corpo em texto puro, um campo por linha. Tudo o que vem depois da linha `prompt:` é o prompt.
+Corpo em texto puro, um campo por linha. Tudo o que vem depois da linha `prompt:` é o prompt, escrito em blocos no formato da skill `storyboard-clt` (seção 3). A imagem de `referencia` é a `Image 1` do prompt.
 
 ```
 id: 2026-11-05-reel-q1
@@ -28,7 +28,13 @@ referencia: <link do Drive da imagem âncora, ou "nenhuma">
 pasta: <ID da pasta do Drive>
 arquivo: 2026-11-05-reel-q1.png
 prompt:
-Keep the exact same character from the reference image: ... No text, no letters, no words, no numbers, no speech balloons, no logos, no watermark.
+Use: vertical 9:16 panel for an Instagram comic reel. Image 1 is the character reference.
+Style: ...
+Character: The same woman shown in Image 1. ...
+Scene: ...
+Camera: ...
+Composition: ...
+Constraints: The image contains no text of any kind. ... No text, no letters, no words, no numbers, no speech balloons, no logos, no watermark.
 ```
 
 ## Resposta (Hermes para Claude)
