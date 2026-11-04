@@ -88,7 +88,7 @@ Texto fixo de `Constraints:`:
 **Prompt âncora da personagem.** Gere uma vez, sem referência, e use como `Image 1` em todos os quadros:
 
 ```
-Use: character reference portrait for a comic series. This image will be the reference for every future panel.
+Use: vertical 4:5 character reference portrait for a comic series. This image will be the reference for every future panel.
 Style: Brazilian comic and meme style digital illustration, clean bold black ink lines, flat colors, high contrast, a palette of yellow, magenta, black and white.
 Character: An adult woman with a delicate face, big expressive brown eyes, round black glasses, soft freckles on her nose and cheeks, dark eyebrows, and brown hair in a big high voluminous bun with loose strands.
 Scene: She stands relaxed and faces the viewer with a neutral, relaxed expression and her mouth closed.
