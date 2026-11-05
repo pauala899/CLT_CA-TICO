@@ -63,7 +63,7 @@ O pedido traz a proporção e o tamanho desejado. Se o modelo não gerar esse ta
 
 - Um e-mail por agente por dia, com até 5 prompts (a cota diária do agente 01). Cada prompt é uma imagem, com o seu próprio `id`.
 - Cada imagem devolvida no e-mail de resposta leva o nome do seu `id`.
-- O agente só aceita pedidos enviados pela conta central de comunicação (ver `etapas-e-decisoes.md`) e com o assunto começando por `[CLT-PEDIDO]`. Ignora qualquer outro e-mail.
+- O agente só aceita pedidos enviados pela conta conectada ao Claude (remetente autorizado, ver `etapas-e-decisoes.md`) e com o assunto começando por `[CLT-PEDIDO]`. Ignora qualquer outro e-mail.
 - O agente usa o prompt exatamente como veio, sem acrescentar nem tirar nada.
 - A imagem original vai para `02_IMAGENS` sem edição, com o nome pedido.
 - Para refazer uma imagem, o Claude manda um pedido novo, com a versão seguinte no `id`.
@@ -143,7 +143,7 @@ Anexos: `2026-11-05_reel_q1_v1.png`, e assim por diante. Se alguma imagem falhar
 
 - Os outros agentes, com o limite por dia, o modelo e se aceitam imagem de referência.
 - Onde guardar o e-mail de cada agente fora do repositório, por exemplo num arquivo em `04_CONTROLE`.
-- A conta central de comunicação envia os pedidos e recebe as respostas de todos os agentes. O endereço fica fora do repositório. O Gmail conectado ao Claude precisa ser essa conta.
+- A caixa do agente 01 é a conta pessoal do responsável. O endereço fica fora do repositório, por ser público. É nela que o agente recebe os pedidos e envia as respostas. Os pedidos saem da conta conectada ao Claude, que o agente precisa aceitar.
 - Se o uso proposto para `01_PEDIDOS`, `03_ENTREGAS` e `04_CONTROLE` está certo.
 - Como o Claude baixa a imagem para o ambiente. Pelo conector do Drive, a imagem chega como texto codificado. Falta testar com a primeira imagem real se isso funciona. Se não funcionar, as opções são liberar na rede do ambiente o endereço do VPS, com o agente mandando um link direto, ou liberar o download do Drive, com o arquivo compartilhado por link.
 - Como o Claude envia arquivos grandes, como os reels prontos, para `03_ENTREGAS`. O conector do Drive tem o mesmo limite.
