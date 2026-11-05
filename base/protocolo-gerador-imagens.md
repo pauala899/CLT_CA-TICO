@@ -10,9 +10,22 @@ O responsável está montando a estrutura dos agentes. Os e-mails não ficam nes
 
 | Agente | Limite por dia | Modelo | Aceita imagem de referência? |
 |---|---|---|---|
-| Agente de imagem 01 | 5 imagens | a informar | a informar |
+| Agente de imagem 01 | 5 imagens, numa rodada por dia (horário a informar) | a informar | a informar |
 
 O Claude divide os pedidos do dia entre os agentes sem passar do limite de nenhum. Os quadros que precisam manter a personagem igual vão para os agentes que aceitam imagem de referência.
+
+### Rotina dos agentes
+
+Informado pelo responsável em 2026-11-05: cada agente trabalha uma vez por dia, num horário fixo, e gera 5 imagens nessa rodada. Por isso as imagens são planejadas com antecedência:
+
+| Quando | O quê |
+|---|---|
+| Até 2 dias antes da publicação (D-2) | Roteiro, falas e storyboard aprovados pelo responsável. |
+| Véspera (D-1), antes do horário do agente | O Claude envia os pedidos de imagem do dia D, um e-mail por imagem. |
+| Depois da rodada do agente | O Claude baixa e revisa as imagens e monta as peças. |
+| Dia D, antes de publicar | O responsável aprova as peças e publica. |
+
+Uma imagem reprovada na revisão vai como pedido novo, com a versão seguinte no `id`, na próxima rodada do agente. Se não puder esperar, o Claude refaz com outra fonte de `base/fontes-imagem.md`, como o Hugging Face ou o Pollinations.
 
 ## Pastas no Drive
 
