@@ -31,6 +31,9 @@ Antes de qualquer ação:
 | Formato do reel | Ilustrações paradas animadas com motion graphics (texto animado, balões, transições), sem gerador de vídeo. Os motion graphics são feitos em código pelo Claude, no Remotion, escolha do responsável no lugar do Claude Motion. |
 | Revisão | Toda a estrutura feita, imagem ou vídeo, é revisada antes de ser apresentada, conforme a seção 11 do `CLAUDE.md`. |
 | Gerador de imagens no VPS | Decidido em 2026-11-04. Um agente Hermes no VPS do responsável gera as imagens com um modelo aberto rodando no próprio VPS. O Claude pede as imagens por e-mail e recebe a resposta quando a imagem estiver no Drive. |
+| Formato dos prompts de imagem | Pedido do responsável em 2026-11-04: seguir o jeito de escrever do Nano Banana e do GPT Image 2, com frases completas em blocos rotulados (`Use`, `Style`, `Character`, `Scene`, `Camera`, `Composition`, `Constraints`). O modelo fica na seção 3 da skill `storyboard-clt`. |
+| Identificação dos pedidos e nome dos arquivos | Decidido em 2026-11-04, para todos os pedidos enviados pelo Claude: `AAAA-MM-DD_<peça>_<quadro>_v<versão>`, por exemplo `2026-11-05_reel_q1_v1`. A peça é `reel`, `story`, `feed` ou `carrossel1` a `carrossel5`; o quadro segue a ordem de leitura (`q1`, `q2`...); a versão começa em `v1` e sobe a cada refação. O `id` do pedido é o nome do arquivo sem a extensão. A âncora da personagem é `base_ancora_v1`. Detalhes em `base/protocolo-gerador-imagens.md`. |
+| Regras do Gerenciador V4 | Decidido em 2026-11-04. O gerenciador dos agentes de imagem não altera os nomes definidos pelo Claude, não confunde versões diferentes, não sobrescreve imagens anteriores, preserva a âncora da personagem e registra cada imagem recebida e processada. Como cada regra se aplica está em `base/protocolo-gerador-imagens.md` (proposta). |
 
 Links do Drive:
 
@@ -51,4 +54,4 @@ Links do Drive:
 | Chamada para ação | O briefing não define a frase do fechamento dos reels. O teste termina só com o nome da marca. |
 | Primeiro dia | Tema e data a definir pelo responsável. |
 | Seção 9 do briefing | O `CLAUDE.md` pula da seção 8 para a 10. Confirmar se falta conteúdo. |
-| Protocolo do gerador | Proposta do formato dos e-mails em `base/protocolo-gerador-imagens.md`. Falta definir o e-mail que o Hermes lê, a pasta do Drive, como o Claude baixa a imagem para o ambiente, o modelo usado, se ele aceita imagem de referência e se a licença permite uso comercial. |
+| Protocolo do gerador | Proposta do formato dos e-mails, do nome dos arquivos e do uso das pastas em `base/protocolo-gerador-imagens.md`. O responsável criou no Drive a pasta `CENTRAL IA`, com `01_PEDIDOS`, `02_IMAGENS`, `03_ENTREGAS` e `04_CONTROLE`; os IDs estão no protocolo. Primeiro pedido de teste (`base_ancora_v1`, a âncora nova sem referência) enviado ao agente de imagem 01 em 2026-11-04, aguardando a resposta. Falta definir os outros agentes, confirmar o uso das pastas, testar como o Claude baixa e envia arquivos pelo Drive e saber qual modelo os agentes usam, se ele aceita imagem de referência e se a licença permite uso comercial. |
