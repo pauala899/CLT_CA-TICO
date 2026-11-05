@@ -5,6 +5,7 @@ import { slide } from "@remotion/transitions/slide";
 import { wipe } from "@remotion/transitions/wipe";
 import { Fechamento } from "./componentes/Fechamento";
 import { Quadro } from "./componentes/Quadro";
+import { Sons } from "./componentes/Sons";
 import type { Entrada, PropsReel, Reel } from "./tipos";
 
 const emQuadros = (segundos: number, fps: number) => Math.round(segundos * fps);
@@ -51,6 +52,7 @@ export const ReelQuadrinho: React.FC<PropsReel> = ({ reel }) => {
     partes.push(
       <TransitionSeries.Sequence key={`quadro-${i}`} name={`Quadro ${i + 1}: ${quadro.papel}`} durationInFrames={duracao}>
         <Quadro quadro={quadro} duracao={duracao} />
+        <Sons sons={quadro.sons} />
       </TransitionSeries.Sequence>,
     );
   });
@@ -60,6 +62,7 @@ export const ReelQuadrinho: React.FC<PropsReel> = ({ reel }) => {
   partes.push(
     <TransitionSeries.Sequence key="fechamento" name="Fechamento" durationInFrames={emQuadros(reel.fechamento.duracaoSeg, fps)}>
       <Fechamento texto={reel.fechamento.texto} />
+      <Sons sons={reel.fechamento.sons} />
     </TransitionSeries.Sequence>,
   );
 

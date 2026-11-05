@@ -1,0 +1,146 @@
+{
+  "titulo": "Teste: a sexta-feira que não acabou (com voz e efeitos)",
+  "quadros": [
+    {
+      "papel": "expectativa",
+      "fala": "Sexta, 17h58. Ninguém me segura!",
+      "quemFala": "protagonista",
+      "duracaoSeg": 4.2,
+      "expressao": "calma",
+      "balao": {
+        "estilo": "normal",
+        "topo": 5
+      },
+      "entrada": {
+        "tipo": "corte",
+        "quadros": 0
+      },
+      "imagem": "artes/2026-11-05/2026-11-05_reel_q1_v1.jpg",
+      "imagemFundo": "#F9D119",
+      "imagemDesce": 110,
+      "sons": [
+        {
+          "arquivo": "sons/efeitos/pop.wav",
+          "emSeg": 0.33,
+          "volume": 0.5
+        },
+        {
+          "arquivo": "sons/vozes/2026-11-05/2026-11-05_reel_q1_voz_v1.wav",
+          "emSeg": 0.4
+        }
+      ]
+    },
+    {
+      "papel": "interrupcao",
+      "fala": "Antes de você ir... é rapidinho!",
+      "quemFala": "fora-de-cena",
+      "duracaoSeg": 4.5,
+      "expressao": "surpresa",
+      "balao": {
+        "estilo": "normal",
+        "topo": 6
+      },
+      "entrada": {
+        "tipo": "deslize",
+        "quadros": 8
+      },
+      "imagem": "artes/2026-11-05/2026-11-05_reel_q2_v1.jpg",
+      "imagemFundo": "#F2C93B",
+      "imagemDesce": 30,
+      "sons": [
+        {
+          "arquivo": "sons/efeitos/whoosh.wav",
+          "emSeg": 0,
+          "volume": 0.6
+        },
+        {
+          "arquivo": "sons/efeitos/pop.wav",
+          "emSeg": 0.12,
+          "volume": 0.5
+        },
+        {
+          "arquivo": "sons/vozes/2026-11-05/2026-11-05_reel_q2_voz_v1.wav",
+          "emSeg": 0.2
+        }
+      ]
+    },
+    {
+      "papel": "escalada",
+      "fala": "É só refazer tudo. Pra segunda, 8h!",
+      "quemFala": "fora-de-cena",
+      "duracaoSeg": 3.9,
+      "expressao": "panico",
+      "balao": {
+        "estilo": "grito",
+        "topo": 4
+      },
+      "entrada": {
+        "tipo": "corte",
+        "quadros": 0
+      },
+      "imagem": "artes/2026-11-05/2026-11-05_reel_q3_v1.jpg",
+      "imagemFundo": "#C81F77",
+      "imagemDesce": 200,
+      "sons": [
+        {
+          "arquivo": "sons/efeitos/impacto.wav",
+          "emSeg": 0,
+          "volume": 0.7
+        },
+        {
+          "arquivo": "sons/vozes/2026-11-05/2026-11-05_reel_q3_voz_v1.wav",
+          "emSeg": 0.15
+        }
+      ]
+    },
+    {
+      "papel": "punchline",
+      "fala": "Meu fim de semana pediu demissão.",
+      "quemFala": "protagonista",
+      "duracaoSeg": 6.0,
+      "expressao": "exausta",
+      "balao": {
+        "estilo": "normal",
+        "topo": 4
+      },
+      "entrada": {
+        "tipo": "corte",
+        "quadros": 0
+      },
+      "imagem": "artes/2026-11-05/2026-11-05_reel_q4_v1.jpg",
+      "imagemFundo": "#FAE553",
+      "imagemDesce": 200,
+      "sons": [
+        {
+          "arquivo": "sons/efeitos/pop.wav",
+          "emSeg": 0.5,
+          "volume": 0.5
+        },
+        {
+          "arquivo": "sons/vozes/2026-11-05/2026-11-05_reel_q4_voz_v1.wav",
+          "emSeg": 0.55
+        },
+        {
+          "arquivo": "sons/efeitos/trombone-triste.wav",
+          "emSeg": 3.15,
+          "volume": 0.55
+        }
+      ]
+    }
+  ],
+  "fechamento": {
+    "texto": "CLT Caótica",
+    "duracaoSeg": 1.8,
+    "entrada": {
+      "tipo": "wipe",
+      "quadros": 10
+    },
+    "sons": [
+      {
+        "arquivo": "sons/efeitos/plim.wav",
+        "emSeg": 0.35,
+        "volume": 0.5
+      }
+    ]
+  }
+}
