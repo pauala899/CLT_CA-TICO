@@ -37,6 +37,7 @@ Antes de qualquer ação:
 | Modelo de reel | Aprovado pelo responsável em 2026-11-05 ("gostei demais deste modelo"): o reel de teste da sexta com voz e efeitos, composição `ReelTesteSextaSom`, com a legenda em `testes/2026-11-05-reel-sexta/legenda.md`. É a referência para os próximos reels: 4 quadros (expectativa, interrupção, escalada e punchline) e o fechamento, balões animados, ilustrações no estilo do teste, vozes da API do Gemini, efeitos sintetizados em código e legenda com chamada para comentar e marcar. Detalhes em `testes/2026-11-05-reel-sexta/storyboard.md`. |
 | Cores e fontes | Aprovadas junto com o modelo de reel em 2026-11-05: amarelo `#FFD60A`, magenta `#E6007E`, preto `#111111` e branco `#FFFFFF`; Bangers nas falas e Anton nos títulos, ambas de licença aberta (SIL OFL). |
 | Custo da geração de imagens | Decidido pelo responsável em 2026-11-05: buscar só opções gratuitas. Nada de gerar imagem paga. Cada serviço com uma conta só, sem somar contas para multiplicar cota. |
+| Fontes de geração de imagem | Decidido pelo responsável em 2026-11-05: o Hugging Face é uma fonte de imagens e o Pollinations é outra, junto com o agente de imagem 01. Como usar cada uma, os limites e a ordem de uso (proposta) estão em `base/fontes-imagem.md`. |
 
 Links do Drive:
 
