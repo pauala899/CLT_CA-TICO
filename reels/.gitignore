@@ -8,3 +8,6 @@ out
 
 # Artes geradas: ficam fora do GitHub (ver etapas-e-decisoes.md)
 public/artes/
+
+# Vozes geradas: ficam fora do GitHub, como as artes
+public/sons/vozes/

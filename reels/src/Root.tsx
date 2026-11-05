@@ -3,6 +3,7 @@ import { CalculateMetadataFunction, Composition } from "remotion";
 import dadosTesteCafe from "../roteiros/teste-cafe.json";
 import dadosTesteCafeIlustrado from "../roteiros/teste-cafe-ilustrado.json";
 import dadosTesteSexta from "../roteiros/teste-sexta.json";
+import dadosTesteSextaSom from "../roteiros/teste-sexta-som.json";
 import { duracaoTotal, ReelQuadrinho } from "./ReelQuadrinho";
 import type { PropsReel, Reel } from "./tipos";
 
@@ -12,6 +13,8 @@ const testeCafe = dadosTesteCafe as Reel;
 const testeCafeIlustrado = dadosTesteCafeIlustrado as Reel;
 // Precisa das ilustrações em public/artes/2026-11-05/, que ficam fora do GitHub.
 const testeSexta = dadosTesteSexta as Reel;
+// Precisa também das vozes em public/sons/vozes/2026-11-05/, fora do GitHub.
+const testeSextaSom = dadosTesteSextaSom as Reel;
 
 const calcularDuracao: CalculateMetadataFunction<PropsReel> = ({ props }) => ({
   durationInFrames: duracaoTotal(props.reel, FPS),
@@ -48,6 +51,16 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         durationInFrames={duracaoTotal(testeSexta, FPS)}
         defaultProps={{ reel: testeSexta }}
+        calculateMetadata={calcularDuracao}
+      />
+      <Composition
+        id="ReelTesteSextaSom"
+        component={ReelQuadrinho}
+        width={1080}
+        height={1920}
+        fps={FPS}
+        durationInFrames={duracaoTotal(testeSextaSom, FPS)}
+        defaultProps={{ reel: testeSextaSom }}
         calculateMetadata={calcularDuracao}
       />
     </>

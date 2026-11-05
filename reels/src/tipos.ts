@@ -7,6 +7,16 @@ export type Entrada = {
   quadros: number;
 };
 
+// Um som tocado dentro de uma cena: voz, efeito ou música.
+export type Som = {
+  // Caminho do arquivo dentro de public/.
+  arquivo: string;
+  // Quando o som começa, em segundos, contados do início da cena.
+  emSeg: number;
+  // De 0 a 1. Sem ele, volume 1.
+  volume?: number;
+};
+
 export type Quadro = {
   papel: Papel;
   // Fala exata do roteiro aprovado. Nunca é gerada pelo código.
@@ -27,6 +37,8 @@ export type Quadro = {
   imagemFundo?: string;
   // Quantos pixels a ilustração desce, para abrir espaço para o balão acima da cabeça.
   imagemDesce?: number;
+  // Vozes e efeitos da cena.
+  sons?: Som[];
 };
 
 export type Reel = {
@@ -36,6 +48,7 @@ export type Reel = {
     texto: string;
     duracaoSeg: number;
     entrada: Entrada;
+    sons?: Som[];
   };
 };
 

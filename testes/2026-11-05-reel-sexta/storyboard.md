@@ -91,3 +91,27 @@ Tamanho: 768x1344. As imagens ficam em `reels/public/artes/2026-11-05/`, fora do
 - No quadro 1, a ilustração desceu um pouco mais para o punho erguido não encostar no balão.
 - As quebras de linha dos balões foram ajustadas com espaço fixo, para "é rapidinho" e "ninguém me segura" não ficarem partidos.
 - Vídeo final: 1080x1920, 30 fps, 441 quadros, 14,7 s, sem áudio e sem quadros pretos. Os acentos (É, Ê, Ã) aparecem inteiros nos balões.
+
+## 6. Versão com voz e efeitos
+
+Pedido do responsável em 2026-11-05: narração com voz bem viva e efeitos sonoros. Composição `ReelTesteSextaSom`, roteiro em `reels/roteiros/teste-sexta-som.json`, 19,8 s.
+
+**Vozes**, geradas com a chave `GOOGLE_API_KEY`, na API do Gemini, no plano gratuito. Ficam fora do GitHub, em `reels/public/sons/vozes/2026-11-05/`.
+
+| Fala | Modelo | Voz | Direção |
+|---|---|---|---|
+| 1 | `gemini-2.5-flash-preview-tts` | Laomedeia | Rápida, animadíssima, comemorando. |
+| 2 | `gemini-3.1-flash-tts-preview` | Fenrir | Melosa e falsa, fingindo que é pouca coisa. Acelerada 12% na montagem. |
+| 3 | `gemini-3.1-flash-tts-preview` | Fenrir | Gritando, apressado e mandão. Acelerada 10% na montagem. |
+| 4 | `gemini-2.5-flash-preview-tts` | Laomedeia | Exausta, arrastada, sem emoção. |
+
+Os números foram escritos por extenso no texto enviado ("dezessete e cinquenta e oito", "oito horas") para a voz ler certo. As falas foram cortadas no silêncio e niveladas em -16 LUFS.
+
+**Efeitos**, sintetizados em código por `reels/scripts/gerar-efeitos.py`, sem amostras de terceiros: pop quando o balão aparece, whoosh no deslize, pancada no grito, trombone triste depois da punchline e plim no nome da marca.
+
+**Revisão:**
+
+- O Claude não ouve áudio. A conferência foi feita por medição e por transcrição automática do Gemini (`gemini-3.5-flash`).
+- A transcrição confirmou as quatro falas, sem palavras a mais ou faltando, e as falas claras por cima dos efeitos.
+- A transcrição oscilou ao dizer se a voz do colega soa masculina ou feminina. O responsável precisa ouvir e decidir.
+- Áudio final: AAC, 48 kHz, -16,5 LUFS, pico de -3,3 dBFS. Vídeo: 1080x1920, 30 fps, 594 quadros, sem quadros pretos.

@@ -36,6 +36,18 @@ O segundo teste, a piada da sexta-feira, é a composição `ReelTesteSexta` (rot
 npx remotion render ReelTesteSexta out/reel-teste-sexta.mp4 --codec=h264
 ```
 
+A versão com voz e efeitos é a composição `ReelTesteSextaSom` (roteiro em `roteiros/teste-sexta-som.json`). Ela precisa também das vozes em `public/sons/vozes/2026-11-05/`, fora do GitHub:
+
+```bash
+npx remotion render ReelTesteSextaSom out/reel-teste-sexta-som.mp4 --codec=h264
+```
+
+## Som
+
+- Cada cena pode ter `sons` no roteiro: voz, efeito ou música, com o arquivo (dentro de `public/`), o segundo em que começa, contado do início da cena, e o volume.
+- Os efeitos ficam em `public/sons/efeitos/` e são gerados por `python3 scripts/gerar-efeitos.py`. São sintetizados em código, sem amostras de terceiros.
+- As vozes ficam em `public/sons/vozes/`, fora do GitHub, como as artes.
+
 ## Como funciona
 
 - `roteiros/*.json`: as falas exatas, quem fala, a duração e o movimento de cada quadro. As falas vêm sempre do roteiro aprovado.
