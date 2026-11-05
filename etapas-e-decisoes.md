@@ -38,6 +38,12 @@ Antes de qualquer ação:
 | Cores e fontes | Aprovadas junto com o modelo de reel em 2026-11-05: amarelo `#FFD60A`, magenta `#E6007E`, preto `#111111` e branco `#FFFFFF`; Bangers nas falas e Anton nos títulos, ambas de licença aberta (SIL OFL). |
 | Custo da geração de imagens | Decidido pelo responsável em 2026-11-05: buscar só opções gratuitas. Nada de gerar imagem paga. Cada serviço com uma conta só, sem somar contas para multiplicar cota. |
 | Fontes de geração de imagem | Decidido pelo responsável em 2026-11-05: o Hugging Face é uma fonte de imagens e o Pollinations é outra, junto com o agente de imagem 01. Como usar cada uma, os limites e a ordem de uso (proposta) estão em `base/fontes-imagem.md`. |
+| Frequência e durações | Decidido pelo responsável em 2026-11-05: 1 reel por dia, de 45 a 60 s; 6 stories por dia, em vídeo de 20 a 30 s; 5 carrosséis por semana, de 5 a 7 imagens. Detalhes em `planejamento/producao.md`. |
+| Número de quadros | Decidido em 2026-11-05: não é fixo. Cada peça usa os quadros que a história precisar. A skill `storyboard-clt` e a seção 3 do `CLAUDE.md` ainda dizem o contrário, e ficam para ajuste depois de confirmação. |
+| Formato em quadrinho | Decidido em 2026-11-05: as peças são quadrinhos. A imagem sai sem texto, e os balões entram depois. Um mesmo quadro serve ao reel, ao story e ao carrossel. |
+| Som | Decidido em 2026-11-05: estímulo visual e sonoro juntos. Stories e reels têm som, com voz e efeito no tempo de cada quadro. O carrossel fica sem som. |
+| Conteúdo | Decidido pelo responsável em 2026-11-05: humor ácido e ironia forte, com pensamentos intrusivos em balão de pensamento. Cenas principais: casa, trabalho e academia. Toda peça leva chamada para comentar. |
+| Capacidade de produção | Decidido pelo responsável em 2026-11-05: 50 imagens por dia no início. Novos agentes quando a necessidade passar de 45 por dia. |
 
 Links do Drive:
 
@@ -49,6 +55,14 @@ Links do Drive:
 
 | Item | Situação |
 |------|----------|
+| Música dos vídeos | Pendente: gravar uma faixa livre no vídeo, ou escolher a música no Instagram na hora de publicar. |
+| Agentes de imagem | Pendente: confirmar 10 agentes de 5 imagens por dia, quais aceitam imagem de referência, e os e-mails de cada um (fora do repositório). |
+| Ciclo de produção | Proposta: pedido de manhã, resposta dos agentes à noite e edição no dia seguinte. Aguarda confirmação. |
+| Ferramenta paga de imagem | Pendente: a conversa indicou pagar uma ferramenta, mas a decisão de custo acima ainda diz "só gratuito". Confirmar e atualizar o registro de custo. |
+| Clipe animado pelos agentes | Proposta: para a punchline e a reação, um clipe de 4 segundos em MP4, não GIF. Exige teste e aprovação, porque muda a regra "sem gerador de vídeo". |
+| Skill e briefing | Pendente: atualizar a skill `storyboard-clt` e as seções 3, 7 e 8 do `CLAUDE.md` com as durações e quantidades novas. |
+| Pasta "CLT Caótica" no Drive | Pendente: a pasta está na lixeira. Restaurar, ou trocar o destino dos arquivos. |
+| R2 | Pendente: a seção 11 do `CLAUDE.md` ainda pede confirmar o armazenamento no R2, mesmo com a parte de Cloudflare retirada. |
 | Onde ficam artes e vídeos | Proposta: no Drive, fora do GitHub, por serem arquivos pesados. Falta decidir se o Drive substitui o R2 ou se os dois serão usados. Até lá, a seção 11 do `CLAUDE.md` continua pedindo o R2. |
 | Geração de imagens | Funcionando desde 2026-11-04, depois de liberar `gen.pollinations.ai` e `media.pollinations.ai` na rede do ambiente. Usa a chave secreta `POLLINATIONS_API_KEY02` (`sk_`); pela documentação do Pollinations, a chave pública (`pk_`) não autentica pedidos. A chave só gasta Pollen de missões (gratuito). No teste foram usados `black-forest-labs/flux.1-kontext-pro` (0,03 pollen por imagem) e `black-forest-labs/flux.2-klein-4b` (0,005), os dois com imagem de referência. O Pollen de missões quase acabou: em 2026-11-05 o teste da sexta gastou mais 0,02 e sobrou cerca de 0,004, pela conta dos pedidos, menos que uma imagem. Para continuar: fazer missões no painel ou liberar Pollen pago na chave. Para eu ver o saldo, a chave precisa da permissão `account:usage`. Cloudflare: a chave `CLOUDFLARE_API_TOKEN` foi recusada (parece ser a chave secreta do R2) e falta o ID da conta. |
 | Storyboard | Skill criada em `.claude/skills/storyboard-clt/` e usada no teste `testes/2026-11-04-reel-cafe/storyboard.md`. Aguardando aprovação do conteúdo. |
