@@ -39,6 +39,7 @@ Antes de qualquer ação:
 | Custo da geração de imagens | Decidido pelo responsável em 2026-11-05: buscar só opções gratuitas. Nada de gerar imagem paga. Cada serviço com uma conta só, sem somar contas para multiplicar cota. |
 | Fontes de geração de imagem | Decidido pelo responsável em 2026-11-05: o Hugging Face é uma fonte de imagens e o Pollinations é outra, junto com o agente de imagem 01. Como usar cada uma, os limites e a ordem de uso (proposta) estão em `base/fontes-imagem.md`. |
 | Rotina dos agentes de imagem | Informado pelo responsável em 2026-11-05: cada agente roda uma vez por dia, em horário fixo, e gera 5 imagens. As imagens de um dia são pedidas até a véspera, antes do horário do agente, com o roteiro aprovado dois dias antes. Detalhes em `base/protocolo-gerador-imagens.md`. |
+| Formato do e-mail de pedido | Decidido pelo responsável em 2026-11-05: cada e-mail para um agente traz até 5 prompts, um por imagem, com o seu `id`. O agente devolve as imagens como anexos no e-mail de resposta, com o nome do `id`. Detalhes em `base/protocolo-gerador-imagens.md`. |
 
 Links do Drive:
 
