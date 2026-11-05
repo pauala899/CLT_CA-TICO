@@ -40,6 +40,7 @@ Antes de qualquer ação:
 | Fontes de geração de imagem | Decidido pelo responsável em 2026-11-05: o Hugging Face é uma fonte de imagens e o Pollinations é outra, junto com o agente de imagem 01. Como usar cada uma, os limites e a ordem de uso (proposta) estão em `base/fontes-imagem.md`. |
 | Rotina dos agentes de imagem | Informado pelo responsável em 2026-11-05: cada agente roda uma vez por dia, em horário fixo, e gera 5 imagens. As imagens de um dia são pedidas até a véspera, antes do horário do agente, com o roteiro aprovado dois dias antes. Detalhes em `base/protocolo-gerador-imagens.md`. |
 | Formato do e-mail de pedido | Decidido pelo responsável em 2026-11-05: cada e-mail para um agente traz até 5 prompts, um por imagem, com o seu `id`. O agente devolve as imagens como anexos no e-mail de resposta, com o nome do `id`. Detalhes em `base/protocolo-gerador-imagens.md`. |
+| Conta central de comunicação com os agentes | Decidido pelo responsável em 2026-11-05: uma conta pessoal dele envia os pedidos e recebe as respostas de todos os agentes. O endereço fica fora do repositório, por ser público. O Gmail conectado ao Claude precisa ser essa conta; hoje está conectada outra, que não deve ser a central. |
 
 Links do Drive:
 
