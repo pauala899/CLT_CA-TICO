@@ -30,6 +30,12 @@ A versão com as ilustrações do Pollinations é a composição `ReelTesteCafeI
 npx remotion render ReelTesteCafeIlustrado out/reel-teste-cafe-ilustrado.mp4 --codec=h264
 ```
 
+O segundo teste, a piada da sexta-feira, é a composição `ReelTesteSexta` (roteiro em `roteiros/teste-sexta.json`). Ele precisa das imagens em `public/artes/2026-11-05/`, também fora do GitHub:
+
+```bash
+npx remotion render ReelTesteSexta out/reel-teste-sexta.mp4 --codec=h264
+```
+
 ## Como funciona
 
 - `roteiros/*.json`: as falas exatas, quem fala, a duração e o movimento de cada quadro. As falas vêm sempre do roteiro aprovado.
