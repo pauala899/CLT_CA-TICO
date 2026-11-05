@@ -1,0 +1,85 @@
+{
+  "titulo": "Teste: a sexta-feira que não acabou",
+  "quadros": [
+    {
+      "papel": "expectativa",
+      "fala": "Sexta, 17h58. Ninguém me segura!",
+      "quemFala": "protagonista",
+      "duracaoSeg": 3.5,
+      "expressao": "calma",
+      "balao": {
+        "estilo": "normal",
+        "topo": 5
+      },
+      "entrada": {
+        "tipo": "corte",
+        "quadros": 0
+      },
+      "imagem": "artes/2026-11-05/2026-11-05_reel_q1_v1.jpg",
+      "imagemFundo": "#F9D119",
+      "imagemDesce": 110
+    },
+    {
+      "papel": "interrupcao",
+      "fala": "Antes de você ir... é rapidinho!",
+      "quemFala": "fora-de-cena",
+      "duracaoSeg": 3,
+      "expressao": "surpresa",
+      "balao": {
+        "estilo": "normal",
+        "topo": 6
+      },
+      "entrada": {
+        "tipo": "deslize",
+        "quadros": 8
+      },
+      "imagem": "artes/2026-11-05/2026-11-05_reel_q2_v1.jpg",
+      "imagemFundo": "#F2C93B",
+      "imagemDesce": 30
+    },
+    {
+      "papel": "escalada",
+      "fala": "É só refazer tudo. Pra segunda, 8h!",
+      "quemFala": "fora-de-cena",
+      "duracaoSeg": 3,
+      "expressao": "panico",
+      "balao": {
+        "estilo": "grito",
+        "topo": 4
+      },
+      "entrada": {
+        "tipo": "corte",
+        "quadros": 0
+      },
+      "imagem": "artes/2026-11-05/2026-11-05_reel_q3_v1.jpg",
+      "imagemFundo": "#C81F77",
+      "imagemDesce": 200
+    },
+    {
+      "papel": "punchline",
+      "fala": "Meu fim de semana pediu demissão.",
+      "quemFala": "protagonista",
+      "duracaoSeg": 4,
+      "expressao": "exausta",
+      "balao": {
+        "estilo": "normal",
+        "topo": 4
+      },
+      "entrada": {
+        "tipo": "corte",
+        "quadros": 0
+      },
+      "imagem": "artes/2026-11-05/2026-11-05_reel_q4_v1.jpg",
+      "imagemFundo": "#FAE553",
+      "imagemDesce": 200
+    }
+  ],
+  "fechamento": {
+    "texto": "CLT Caótica",
+    "duracaoSeg": 1.8,
+    "entrada": {
+      "tipo": "wipe",
+      "quadros": 10
+    }
+  }
+}
