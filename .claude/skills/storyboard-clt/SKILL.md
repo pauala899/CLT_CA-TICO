@@ -148,3 +148,5 @@ Se algo falhar, gere de novo só aquele quadro. Depois da montagem, faça a revi
 ## Entrega
 
 Mostre o documento ao responsável e espere a aprovação antes de gerar as imagens. Para ajustes, edite o mesmo arquivo em vez de começar do zero.
+
+**Modelo aprovado.** O reel de teste da sexta, com voz e efeitos (`testes/2026-11-05-reel-sexta/`, composição `ReelTesteSextaSom`), foi aprovado pelo responsável em 2026-11-05 como modelo. Use-o como referência de ritmo, balões, vozes, efeitos e legenda.
