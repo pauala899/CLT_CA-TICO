@@ -11,3 +11,6 @@ public/artes/
 
 # Vozes geradas: ficam fora do GitHub, como as artes
 public/sons/vozes/
+
+# Cache do Python
+__pycache__/
