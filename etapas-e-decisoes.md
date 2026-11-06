@@ -44,6 +44,7 @@ Antes de qualquer ação:
 | Som | Decidido em 2026-11-05: estímulo visual e sonoro juntos. Stories e reels têm som, com voz e efeito no tempo de cada quadro. O carrossel fica sem som. |
 | Conteúdo | Decidido pelo responsável em 2026-11-05: humor ácido e ironia forte, com pensamentos intrusivos em balão de pensamento. Cenas principais: casa, trabalho e academia. Toda peça leva chamada para comentar. |
 | Capacidade de produção | Decidido pelo responsável em 2026-11-05: 50 imagens por dia no início. Novos agentes quando a necessidade passar de 45 por dia. |
+| Automação de comentários e DMs | Decidido pelo responsável em 2026-11-06: SendPulse, no plano gratuito. Respostas só para palavras-chave previstas, com textos aprovados antes. Limites do plano a confirmar na página de preços antes da configuração: a fonte consultada cita 3 chatbots, 10 mil mensagens e 500 assinantes. |
 
 Links do Drive:
 
@@ -63,6 +64,8 @@ Links do Drive:
 | Skill e briefing | Pendente: atualizar a skill `storyboard-clt` e as seções 3, 7 e 8 do `CLAUDE.md` com as durações e quantidades novas. |
 | Pasta "CLT Caótica" no Drive | Pendente: a pasta está na lixeira. Restaurar, ou trocar o destino dos arquivos. |
 | R2 | Pendente: a seção 11 do `CLAUDE.md` ainda pede confirmar o armazenamento no R2, mesmo com a parte de Cloudflare retirada. |
+| Configuração do SendPulse | Pendente: confirmar os limites do plano gratuito, conectar a conta profissional do Instagram, cadastrar as palavras-chave e pelo menos três variações de resposta por palavra-chave, porque o Instagram limita contas que repetem o mesmo texto. Os textos precisam de aprovação antes de ir ao ar. |
+| Capacidade do agente 01 | Informada pelo responsável em 2026-11-06: mais de 100 imagens por dia. Ainda não verificada no primeiro lote (LOTE-001, enviado em 2026-11-06, sem resposta até agora). |
 | Onde ficam artes e vídeos | Proposta: no Drive, fora do GitHub, por serem arquivos pesados. Falta decidir se o Drive substitui o R2 ou se os dois serão usados. Até lá, a seção 11 do `CLAUDE.md` continua pedindo o R2. |
 | Geração de imagens | Funcionando desde 2026-11-04, depois de liberar `gen.pollinations.ai` e `media.pollinations.ai` na rede do ambiente. Usa a chave secreta `POLLINATIONS_API_KEY02` (`sk_`); pela documentação do Pollinations, a chave pública (`pk_`) não autentica pedidos. A chave só gasta Pollen de missões (gratuito). No teste foram usados `black-forest-labs/flux.1-kontext-pro` (0,03 pollen por imagem) e `black-forest-labs/flux.2-klein-4b` (0,005), os dois com imagem de referência. O Pollen de missões quase acabou: em 2026-11-05 o teste da sexta gastou mais 0,02 e sobrou cerca de 0,004, pela conta dos pedidos, menos que uma imagem. Para continuar: fazer missões no painel ou liberar Pollen pago na chave. Para eu ver o saldo, a chave precisa da permissão `account:usage`. Cloudflare: a chave `CLOUDFLARE_API_TOKEN` foi recusada (parece ser a chave secreta do R2) e falta o ID da conta. |
 | Storyboard | Skill criada em `.claude/skills/storyboard-clt/` e usada no teste `testes/2026-11-04-reel-cafe/storyboard.md`. Aguardando aprovação do conteúdo. |
