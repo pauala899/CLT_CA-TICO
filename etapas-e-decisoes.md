@@ -59,7 +59,7 @@ Links do Drive:
 | Agentes de imagem | Pendente: confirmar 10 agentes de 5 imagens por dia, quais aceitam imagem de referência, e os e-mails de cada um (fora do repositório). |
 | Ciclo de produção | Proposta: pedido de manhã, resposta dos agentes à noite e edição no dia seguinte. Aguarda confirmação. |
 | Ferramenta paga de imagem | Pendente: a conversa indicou pagar uma ferramenta, mas a decisão de custo acima ainda diz "só gratuito". Confirmar e atualizar o registro de custo. |
-| Clipe animado pelos agentes | Proposta: para a punchline e a reação, um clipe de 4 segundos em MP4, não GIF. Exige teste e aprovação, porque muda a regra "sem gerador de vídeo". |
+| Clipe animado pelos agentes | Adiado pelo responsável em 2026-11-06 ("esquece gif por enquanto"). Não usar por enquanto. Se voltar, a proposta era um clipe de 4 segundos em MP4, não GIF, com teste e aprovação, porque muda a regra "sem gerador de vídeo". |
 | Skill e briefing | Pendente: atualizar a skill `storyboard-clt` e as seções 3, 7 e 8 do `CLAUDE.md` com as durações e quantidades novas. |
 | Pasta "CLT Caótica" no Drive | Pendente: a pasta está na lixeira. Restaurar, ou trocar o destino dos arquivos. |
 | R2 | Pendente: a seção 11 do `CLAUDE.md` ainda pede confirmar o armazenamento no R2, mesmo com a parte de Cloudflare retirada. |
