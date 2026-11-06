@@ -39,6 +39,7 @@ Antes de qualquer ação:
 | Custo da geração de imagens | Decidido pelo responsável em 2026-11-05: buscar só opções gratuitas. Nada de gerar imagem paga. Cada serviço com uma conta só, sem somar contas para multiplicar cota. |
 | Fontes de geração de imagem | Decidido pelo responsável em 2026-11-05: o Hugging Face é uma fonte de imagens e o Pollinations é outra, junto com o agente de imagem 01. Como usar cada uma, os limites e a ordem de uso (proposta) estão em `base/fontes-imagem.md`. |
 | Frequência e durações | Decidido pelo responsável em 2026-11-05: 1 reel por dia, de 45 a 60 s; 6 stories por dia, em vídeo de 20 a 30 s; 5 carrosséis por semana, de 5 a 7 imagens. Detalhes em `planejamento/producao.md`. |
+| Memes estáticos | Decidido pelo responsável em 2026-11-06: começar com 1 ou 2 memes estáticos por semana, no feed, em 4:5 (1080x1350), com a personagem ou um cenário e o texto aplicado depois. Só memes criados a partir da personagem, sem imagem ou template de terceiros. |
 | Número de quadros | Decidido em 2026-11-05: não é fixo. Cada peça usa os quadros que a história precisar. A skill `storyboard-clt` e a seção 3 do `CLAUDE.md` ainda dizem o contrário, e ficam para ajuste depois de confirmação. |
 | Formato em quadrinho | Decidido em 2026-11-05: as peças são quadrinhos. A imagem sai sem texto, e os balões entram depois. Um mesmo quadro serve ao reel, ao story e ao carrossel. |
 | Som | Decidido em 2026-11-05: estímulo visual e sonoro juntos. Stories e reels têm som, com voz e efeito no tempo de cada quadro. O carrossel fica sem som. |
