@@ -46,6 +46,7 @@ Antes de qualquer ação:
 | Capacidade de produção | Decidido pelo responsável em 2026-11-05: 50 imagens por dia no início. Novos agentes quando a necessidade passar de 45 por dia. |
 | Planejamento de conteúdo | Decidido pelo responsável em 2026-11-06: os vídeos de teste servem só para validar o formato, e não como base de conteúdo. O planejamento recomeça do zero, em etapas: público, personagem, pilares, semana-modelo e ideias. |
 | Pasta de material no Drive | Criada em 2026-11-06, no Meu Drive: "CLT Caótica - Material", com `01-planejamento`, `02-dias`, `03-aprovados` e `04-testes`. Link: https://drive.google.com/drive/folders/1GkbiaWU7Fdph-ONmQXHl2MzgJAlDdwdO. A pasta antiga "CLT Caótica" segue na lixeira, sem alteração. |
+| Ciclo de produção | Decidido pelo responsável em 2026-11-06: o Claude envia ao agente 01, por e-mail, os prompts do dia. O agente prepara as imagens até o fim do dia ou no dia seguinte, direto na pasta "IMAGENS PARA CLAUDE". O Claude pega as imagens prontas e monta reels, stories e carrosséis. |
 | Orquestrador dos agentes | Decidido pelo responsável em 2026-11-06: o agente 01 é o orquestrador. Recebe um único e-mail por lote da conta central, com assunto `[CLT-PEDIDO]`, distribui os pedidos entre os agentes e entrega as imagens na pasta "IMAGENS PARA CLAUDE". O endereço fica fora do repositório. |
 | Fluxo de pedidos | Decidido pelo responsável em 2026-11-06: o Claude envia um único e-mail por lote ao Gerenciador V4, que distribui os pedidos entre os 8 agentes, respeitando o limite de cada conta. O Gerenciador responde com um único e-mail, com uma linha de status por id. As imagens vão para a pasta "IMAGENS PARA CLAUDE". |
 | Planejamento de capacidade | Decidido pelo responsável em 2026-11-06: planejar abaixo do limite real. Só entram no planejamento números medidos no painel de cada conta ou em testes. Estimativas de terceiros não entram. |
@@ -67,7 +68,6 @@ Links do Drive:
 |------|----------|
 | Música dos vídeos | Pendente: gravar uma faixa livre no vídeo, ou escolher a música no Instagram na hora de publicar. |
 | Agentes de imagem | Pendente: a lista dos 8 serviços, com o agente e a conta de cada um, o limite diário que cada painel mostra (informado: 20 imagens por dia por conta), se cada agente aceita imagem de referência, e o e-mail de cada agente (fora do repositório). |
-| Ciclo de produção | Proposta: pedido de manhã, resposta dos agentes à noite e edição no dia seguinte. Aguarda confirmação. |
 | Ferramenta paga de imagem | Pendente: a conversa indicou pagar uma ferramenta, mas a decisão de custo acima ainda diz "só gratuito". Confirmar e atualizar o registro de custo. |
 | Clipe animado pelos agentes | Adiado pelo responsável em 2026-11-06 ("esquece gif por enquanto"). Não usar por enquanto. Se voltar, a proposta era um clipe de 4 segundos em MP4, não GIF, com teste e aprovação, porque muda a regra "sem gerador de vídeo". |
 | Skill e briefing | Pendente: atualizar a skill `storyboard-clt` e as seções 3, 7 e 8 do `CLAUDE.md` com as durações e quantidades novas. |
