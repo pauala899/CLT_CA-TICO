@@ -68,6 +68,6 @@ Cada expressão tem um nome de referência, para usar nos prompts:
 
 ## Pontos a confirmar
 
-- **Termo "bipolar":** sugiro trocar por "emoções intensas" ou "oscilações de humor". O termo clínico pode estigmatizar uma condição de saúde, e a marca fala com um público amplo. Decisão do responsável.
+- **Termo:** decidido em 2026-11-06 pelo responsável. Usar "emoções intensas" ou "oscilações de humor", sem o termo clínico, para não estigmatizar uma condição de saúde.
 - **Público:** em aberto, até termos dados.
 - **Nomes:** confirmar que nenhum nome fictício será criado, como combinado.

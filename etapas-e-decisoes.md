@@ -45,6 +45,7 @@ Antes de qualquer ação:
 | Conteúdo | Decidido pelo responsável em 2026-11-05: humor ácido e ironia forte, com pensamentos intrusivos em balão de pensamento. Cenas principais: casa, trabalho e academia. Toda peça leva chamada para comentar. |
 | Capacidade de produção | Decidido pelo responsável em 2026-11-05: 50 imagens por dia no início. Novos agentes quando a necessidade passar de 45 por dia. |
 | Foco da próxima etapa | Decidido pelo responsável em 2026-11-06: a persona vem antes do público, que fica em aberto por falta de dados. Sem nome fictício: a personagem representa o trabalhador CLT. Proposta da persona em `base/personagem-universo.md`, aguardando aprovação. |
+| Termo da persona | Decidido pelo responsável em 2026-11-06: usar "emoções intensas" ou "oscilações de humor", sem o termo clínico, para não estigmatizar uma condição de saúde. |
 | Planejamento de conteúdo | Decidido pelo responsável em 2026-11-06: os vídeos de teste servem só para validar o formato, e não como base de conteúdo. O planejamento recomeça do zero, em etapas: público, personagem, pilares, semana-modelo e ideias. |
 | Pasta de material no Drive | Criada em 2026-11-06, no Meu Drive: "CLT Caótica - Material", com `01-planejamento`, `02-dias`, `03-aprovados` e `04-testes`. Link: https://drive.google.com/drive/folders/1GkbiaWU7Fdph-ONmQXHl2MzgJAlDdwdO. A pasta antiga "CLT Caótica" segue na lixeira, sem alteração. |
 | Usuário do Instagram | Decidido pelo responsável em 2026-11-06: `@cltcaotica`, confirmado livre. A conta é criada pelo responsável, em conta profissional de criador de conteúdo. |
@@ -70,7 +71,6 @@ Links do Drive:
 | R2 | Pendente: a seção 11 do `CLAUDE.md` ainda pede confirmar o armazenamento no R2, mesmo com a parte de Cloudflare retirada. |
 | Configuração do SendPulse | Pendente: confirmar os limites do plano gratuito, conectar a conta profissional do Instagram, cadastrar as palavras-chave e pelo menos três variações de resposta por palavra-chave, porque o Instagram limita contas que repetem o mesmo texto. Os textos precisam de aprovação antes de ir ao ar. |
 | Capacidade do agente 01 | Informada pelo responsável em 2026-11-06: mais de 100 imagens por dia. Ainda não verificada no primeiro lote (LOTE-001, enviado em 2026-11-06, sem resposta até agora). |
-| Termo "bipolar" na persona | Pendente: sugerido trocar por "emoções intensas" ou "oscilações de humor", por causa do estigma. Decisão do responsável. |
 | Público | Pendente: sem dados ainda. Decidir depois da persona. |
 | Licença das imagens e da voz | Pendente: as imagens saem de modelos abertos, e a voz do Gemini tem regras próprias no plano gratuito. Conferir a licença de cada um antes de publicar, para confirmar que é uso comercial. |
 | Onde ficam artes e vídeos | Proposta: no Drive, fora do GitHub, por serem arquivos pesados. Falta decidir se o Drive substitui o R2 ou se os dois serão usados. Até lá, a seção 11 do `CLAUDE.md` continua pedindo o R2. |
