@@ -46,6 +46,7 @@ Antes de qualquer ação:
 | Capacidade de produção | Decidido pelo responsável em 2026-11-05: 50 imagens por dia no início. Novos agentes quando a necessidade passar de 45 por dia. |
 | Planejamento de conteúdo | Decidido pelo responsável em 2026-11-06: os vídeos de teste servem só para validar o formato, e não como base de conteúdo. O planejamento recomeça do zero, em etapas: público, personagem, pilares, semana-modelo e ideias. |
 | Pasta de material no Drive | Criada em 2026-11-06, no Meu Drive: "CLT Caótica - Material", com `01-planejamento`, `02-dias`, `03-aprovados` e `04-testes`. Link: https://drive.google.com/drive/folders/1GkbiaWU7Fdph-ONmQXHl2MzgJAlDdwdO. A pasta antiga "CLT Caótica" segue na lixeira, sem alteração. |
+| Serviços e contas dos agentes | Decidido pelo responsável em 2026-11-06: 8 agentes, cada um em um serviço diferente, com conta individual. Cumpre a regra de uma conta por serviço. Capacidade informada: 20 imagens por dia por conta, ainda não verificada. |
 | Entrega das imagens | Decidido pelo responsável em 2026-11-06: os agentes entregam as imagens na pasta "IMAGENS PARA CLAUDE", dentro de "CLT Caótica - Material": https://drive.google.com/drive/folders/1JwTGv8o34-l1s3N0x3ywew1H2GSJ1ibz. Cada arquivo leva o nome do `id` do pedido. A resposta por e-mail traz o status de cada id e o link do arquivo. A pasta foi conferida em 2026-11-06: existe e está vazia. |
 | Usuário do Instagram | Decidido pelo responsável em 2026-11-06: `@cltcaotica`, confirmado livre. A conta é criada pelo responsável, em conta profissional de criador de conteúdo. |
 | Automação de comentários e DMs | Decidido pelo responsável em 2026-11-06: SendPulse, no plano gratuito. Respostas só para palavras-chave previstas, com textos aprovados antes. O plano gratuito cobre 3 chatbots e 10 mil mensagens por mês, segundo a SendPulse. O teto de assinantes ainda está em aberto: sites de terceiros citam 500, e a SendPulse diz que o plano gratuito não limita assinantes. Confirmar também se as respostas a comentários contam como mensagens. |
@@ -61,7 +62,7 @@ Links do Drive:
 | Item | Situação |
 |------|----------|
 | Música dos vídeos | Pendente: gravar uma faixa livre no vídeo, ou escolher a música no Instagram na hora de publicar. |
-| Agentes de imagem | Pendente: confirmar 10 agentes de 5 imagens por dia, quais aceitam imagem de referência, e os e-mails de cada um (fora do repositório). |
+| Agentes de imagem | Pendente: a lista dos 8 serviços, com o agente e a conta de cada um, o limite diário que cada painel mostra (informado: 20 imagens por dia por conta), se cada agente aceita imagem de referência, e o e-mail de cada agente (fora do repositório). |
 | Ciclo de produção | Proposta: pedido de manhã, resposta dos agentes à noite e edição no dia seguinte. Aguarda confirmação. |
 | Ferramenta paga de imagem | Pendente: a conversa indicou pagar uma ferramenta, mas a decisão de custo acima ainda diz "só gratuito". Confirmar e atualizar o registro de custo. |
 | Clipe animado pelos agentes | Adiado pelo responsável em 2026-11-06 ("esquece gif por enquanto"). Não usar por enquanto. Se voltar, a proposta era um clipe de 4 segundos em MP4, não GIF, com teste e aprovação, porque muda a regra "sem gerador de vídeo". |
