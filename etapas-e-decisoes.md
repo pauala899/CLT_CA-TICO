@@ -42,7 +42,7 @@ Antes de qualquer ação:
 | Memes estáticos | Decidido pelo responsável em 2026-11-06: começar com 1 ou 2 memes estáticos por semana, no feed, em 4:5 (1080x1350), com a personagem ou um cenário e o texto aplicado depois. Só memes criados a partir da personagem, sem imagem ou template de terceiros. |
 | Número de quadros | Decidido em 2026-11-05: não é fixo. Cada peça usa os quadros que a história precisar. A skill `storyboard-clt` e a seção 3 do `CLAUDE.md` ainda dizem o contrário, e ficam para ajuste depois de confirmação. |
 | Formato em quadrinho | Decidido em 2026-11-05: as peças são quadrinhos. A imagem sai sem texto, e os balões entram depois. Um mesmo quadro serve ao reel, ao story e ao carrossel. |
-| Som | Decidido em 2026-11-05 e atualizado em 2026-11-06: estímulo visual e sonoro juntos. Reels e stories são vídeo, com voz do Gemini, efeitos e motion graphics no tempo de cada quadro. O carrossel é feito de imagens, com motion graphics animando os slides e música, sem voz. A fonte da música continua pendente. |
+| Som | Decidido em 2026-11-05 e atualizado em 2026-11-06: estímulo visual e sonoro juntos. Reels e stories são vídeo, com voz do Gemini, efeitos e motion graphics no tempo de cada quadro. O carrossel é feito de imagens, com motion graphics animando os slides e música, sem voz. A música é uma faixa livre de direitos, gravada no arquivo, e não escolhida no Instagram. A fonte e a licença de cada faixa ainda precisam ser conferidas. |
 | Voz | Decidido pelo responsável em 2026-11-06: usar uma única chave do Gemini (`GOOGLE_API_KEY`), no plano gratuito. Para respeitar o limite: agrupar as falas em blocos de até duas vozes por chamada, espaçar os pedidos em 3 a 5 segundos, tentar de novo com espera no erro 429 e guardar cada áudio gerado, sem refazer. O número de pedidos por dia será medido na primeira produção e registrado aqui. |
 | Conteúdo | Decidido pelo responsável em 2026-11-05: humor ácido e ironia forte, com pensamentos intrusivos em balão de pensamento. Cenas principais: casa, trabalho e academia. Toda peça leva chamada para comentar. |
 | Capacidade de produção | Decidido pelo responsável em 2026-11-05: 50 imagens por dia no início. Novos agentes quando a necessidade passar de 45 por dia. |
@@ -68,7 +68,7 @@ Links do Drive:
 
 | Item | Situação |
 |------|----------|
-| Música dos vídeos | Pendente: gravar uma faixa livre no vídeo, ou escolher a música no Instagram na hora de publicar. |
+| Música dos vídeos | Decidido pelo responsável em 2026-11-06: faixa livre de direitos, gravada no arquivo. Pendente: escolher a fonte (candidata: Pixabay) e conferir a licença de cada faixa. |
 | Agentes de imagem | Pendente: a lista dos 8 serviços, com o agente e a conta de cada um, o limite diário que cada painel mostra (informado: 20 imagens por dia por conta), se cada agente aceita imagem de referência, e o e-mail de cada agente (fora do repositório). |
 | Ferramenta paga de imagem | Pendente: a conversa indicou pagar uma ferramenta, mas a decisão de custo acima ainda diz "só gratuito". Confirmar e atualizar o registro de custo. |
 | Clipe animado pelos agentes | Adiado pelo responsável em 2026-11-06 ("esquece gif por enquanto"). Não usar por enquanto. Se voltar, a proposta era um clipe de 4 segundos em MP4, não GIF, com teste e aprovação, porque muda a regra "sem gerador de vídeo". |
