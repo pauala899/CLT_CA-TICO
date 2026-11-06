@@ -68,7 +68,7 @@ Links do Drive:
 
 | Item | Situação |
 |------|----------|
-| Música dos vídeos | Decidido pelo responsável em 2026-11-06: faixa livre de direitos, gravada no arquivo. Pendente: escolher a fonte (candidata: Pixabay) e conferir a licença de cada faixa. |
+| Música dos vídeos | Decidido pelo responsável em 2026-11-06: faixa livre de direitos, gravada no arquivo, com a Pixabay como fonte. A licença de cada faixa é conferida na página dela antes do uso e anotada na planilha "Músicas usadas - controle de licença" (id `1p-XAJ5kqEDc2GaVrxnEbswKB_WhOOLsZXE8q4Dm1-_o`), em `01-planejamento`. Pendente: conferir os termos atuais da Pixabay no primeiro uso. |
 | Agentes de imagem | Pendente: a lista dos 8 serviços, com o agente e a conta de cada um, o limite diário que cada painel mostra (informado: 20 imagens por dia por conta), se cada agente aceita imagem de referência, e o e-mail de cada agente (fora do repositório). |
 | Ferramenta paga de imagem | Pendente: a conversa indicou pagar uma ferramenta, mas a decisão de custo acima ainda diz "só gratuito". Confirmar e atualizar o registro de custo. |
 | Clipe animado pelos agentes | Adiado pelo responsável em 2026-11-06 ("esquece gif por enquanto"). Não usar por enquanto. Se voltar, a proposta era um clipe de 4 segundos em MP4, não GIF, com teste e aprovação, porque muda a regra "sem gerador de vídeo". |
