@@ -1,0 +1,32 @@
+PLACEHOLDERS DO DIA 3 - IMAGENS QUE AINDA NAO EXISTEM
+
+Coloque aqui os quadros JPEG com estes nomes exatos (o codigo le estes caminhos).
+Quando um arquivo chegar, apague a linha correspondente abaixo.
+
+Reel (720x1280 na saida; quadros em 9:16, 1080x1920 de origem):
+  r1.jpg   = reel_q1   (cena 1, enquadramento aberto)
+  r2.jpg   = reel_q2   (cena 2, enquadramento aberto)
+  r3.jpg   = reel_q3   (cena 3, enquadramento aberto)
+  r4.jpg   = reel_q4   (cena 4, enquadramento aberto)
+  r5.jpg   = reel_q5   (cena 5, enquadramento aberto)
+  r6.jpg   = reel_q6   (cena 6, enquadramento aberto)
+  r7.jpg   = reel_q7   (cena 7, enquadramento aberto)
+  r8.jpg   = reel_q8   (cena 8, enquadramento aberto)
+  r9.jpg   = reel_q9   (close da cena 1)
+  r10.jpg  = reel_q10  (close da cena 2)
+  r11.jpg  = reel_q11  (close da cena 3)
+  r12.jpg  = reel_q12  (close da cena 4)
+  r13.jpg  = reel_q13  (close da cena 5)
+  r14.jpg  = reel_q14  (close da cena 6)
+  r15.jpg  = reel_q15  (close da cena 7)
+  r16.jpg  = reel_q16  (close da cena 8, punchline)
+
+Stories (1080x1920; os stories 1 e 2 sao recortes do reel e usam r1-r16):
+  s1.jpg ... s8.jpg = story_q1 ... story_q8
+
+Memes (1080x1350, 4:5):
+  m1.jpg = meme_q1 (meme aprovado "Ele nem sabe que eu existo")
+  m2.jpg = meme_q2 (rascunho de texto em Meme.tsx)
+  m3.jpg = meme_q3 (rascunho de texto em Meme.tsx)
+
+Total: 27 imagens (16 reel + 8 stories + 3 memes), conforme producao/dia-03/FILA.md.

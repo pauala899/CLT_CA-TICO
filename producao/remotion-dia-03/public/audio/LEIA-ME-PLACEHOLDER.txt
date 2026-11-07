@@ -1,0 +1,14 @@
+PLACEHOLDERS DO DIA 3 - AUDIOS QUE AINDA NAO EXISTEM
+
+Vozes do reel (gerar com ../scripts/vozes-dia-03.json e processar_vozes.py; saida em WAV com estes nomes):
+  L00.wav  L01.wav  L02.wav  L03.wav  L04.wav  L05.wav  L06.wav  L07.wav
+  L08.wav  L09.wav  L10.wav  L11.wav  L12.wav  L13.wav  L14.wav
+
+Vozes dos stories (../scripts/vozes-dia-03-stories.json):
+  ST3a.wav  ST3b.wav  ST4a.wav  ST4b.wav  ST5a.wav  ST5b.wav  ST6a.wav  ST6b.wav
+
+Efeitos sonoros (../scripts/sintetizar_sfx.py; checar se ele cria estes nomes):
+  sfx_whoosh.wav  sfx_pop.wav  sfx_tick.wav  sfx_tock.wav  sfx_buzz.wav  sfx_ding.wav  sfx_trombone.wav
+
+Duracoes: src/durations.json tem estimativas (alvo_s do roteiro de vozes), NAO a duracao real.
+Quando as vozes ficarem prontas, substitua pelos valores reais (mesma chave por id de fala).
