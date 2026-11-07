@@ -10,6 +10,7 @@ const ATRASO: Record<Papel, number> = {
   interrupcao: 3,
   escalada: 2,
   punchline: 15,
+  narracao: 6,
 };
 
 const BORDA = 10;
