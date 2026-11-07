@@ -2,6 +2,8 @@
 
 Decidido pelo responsável em 2026-11-07: todo prompt escreve primeiro a descrição da personagem e depois o cenário. A geração usa o FLUX do Pollinations. O texto do prompt fica em inglês.
 
+Sem imagem de referência, por decisão do responsável em 2026-11-07: a `base_ancora_v3` não é mais usada na geração. O prompt visual único, igual em todas as gerações, é o que mantém sempre a mesma personagem.
+
 ## Estrutura de todo prompt
 
 1. Descrição fixa, igual em todos os quadros.
@@ -37,7 +39,7 @@ Full-bleed illustration that fills the entire canvas, with no frame, no border a
 ## Parâmetros
 
 - Semente única, `4321`, igual em todos os itens. Na refação, só muda a pedido do Claude.
-- Referência `base_ancora_v3` (imagem de referência do modelo FLUX que aceita imagem). Se o script do agente não passar a referência, o status do id leva `sem-referencia`.
+- Sem imagem de referência. A personagem vem só da descrição fixa, idêntica em todos os itens, com a semente única. Qualquer modelo FLUX só de texto serve.
 - Reel e story: 9:16, 1080x1920. Carrossel e feed: 4:5, 1080x1350.
 - Id e nome do arquivo: `AAAA-MM-DD_<peça>_<quadro>_v<versão>`, como em `etapas-e-decisoes.md`.
 
@@ -54,4 +56,6 @@ Full-bleed illustration that fills the entire canvas, with no frame, no border a
 ## Pontos em aberto
 
 - **Sardas:** a ficha pede sardas suaves no nariz e nas bochechas, e a descrição do responsável não cita. A âncora tem sardas. Se saírem imagens sem sardas, propor acrescentar `subtle freckles on her nose and cheeks` na descrição. Só com a confirmação do responsável.
-- **Moldura:** a âncora tem moldura preta e borda de papel. Com a âncora como referência, o modelo pode copiar a moldura para os quadros. O fechamento pede página inteira; conferir na revisão de cada imagem.
+- **Consistência sem referência:** a descrição é a única âncora da personagem. Se o rosto, o coque ou o lenço variarem entre quadros, propor mais detalhes na descrição (por exemplo, a estampa do lenço e o tom de pele), só com a confirmação do responsável.
+- **Moldura:** o fechamento pede página inteira, sem moldura. Conferir na revisão de cada imagem.
+- **`base_ancora_v3`:** deixou de ser usada na geração. Falta confirmar se continua como referência da minha revisão visual.
