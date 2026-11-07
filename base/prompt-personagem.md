@@ -1,6 +1,6 @@
-# Prompt da personagem para o FLUX do Pollinations
+# Prompt da personagem para o Pollinations
 
-Decidido pelo responsável em 2026-11-07: todo prompt escreve primeiro a descrição da personagem e depois o cenário. A geração usa o FLUX do Pollinations. O texto do prompt fica em inglês.
+Decidido pelo responsável em 2026-11-07: todo prompt escreve primeiro a descrição da personagem e depois o cenário. A geração usa o Pollinations. O link que o responsável enviou em 2026-11-07 usa o modelo `tongyi-mai/z-image-turbo`, em 1080x1920, e não um FLUX. O texto do prompt fica em inglês.
 
 Sem imagem de referência, por decisão do responsável em 2026-11-07: a `base_ancora_v3` não é mais usada na geração. O prompt visual único, igual em todas as gerações, é o que mantém sempre a mesma personagem.
 
@@ -39,7 +39,9 @@ Full-bleed illustration that fills the entire canvas, with no frame, no border a
 ## Parâmetros
 
 - Semente única, `4321`, igual em todos os itens. Na refação, só muda a pedido do Claude.
-- Sem imagem de referência. A personagem vem só da descrição fixa, idêntica em todos os itens, com a semente única. Qualquer modelo FLUX só de texto serve.
+- Sem imagem de referência. A personagem vem só da descrição fixa, idêntica em todos os itens, com a semente única. O `tongyi-mai/z-image-turbo` só usa texto.
+- O link do responsável não leva `seed`. O script precisa passar `seed=4321`, senão cada geração sai com uma semente aleatória e o rosto varia.
+- Na amostra conferida, o modelo devolveu JPEG de 1088x1920. O script corta para 1080x1920 e salva em PNG.
 - Reel e story: 9:16, 1080x1920. Carrossel e feed: 4:5, 1080x1350.
 - Id e nome do arquivo: `AAAA-MM-DD_<peça>_<quadro>_v<versão>`, como em `etapas-e-decisoes.md`.
 
