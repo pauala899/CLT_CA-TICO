@@ -10,9 +10,22 @@ O responsável está montando a estrutura dos agentes. Os e-mails não ficam nes
 
 | Agente | Limite por dia | Modelo | Aceita imagem de referência? |
 |---|---|---|---|
-| Agente de imagem 01 | 5 imagens | a informar | a informar |
+| Agente de imagem 01 | 5 imagens, numa rodada por dia (horário a informar) | a informar | a informar |
 
 O Claude divide os pedidos do dia entre os agentes sem passar do limite de nenhum. Os quadros que precisam manter a personagem igual vão para os agentes que aceitam imagem de referência.
+
+### Rotina dos agentes
+
+Informado pelo responsável em 2026-11-05: cada agente trabalha uma vez por dia, num horário fixo, e gera 5 imagens nessa rodada. Por isso as imagens são planejadas com antecedência:
+
+| Quando | O quê |
+|---|---|
+| Até 2 dias antes da publicação (D-2) | Roteiro, falas e storyboard aprovados pelo responsável. |
+| Véspera (D-1), antes do horário do agente | O Claude envia os pedidos de imagem do dia D, um e-mail por imagem. |
+| Depois da rodada do agente | O Claude baixa e revisa as imagens e monta as peças. |
+| Dia D, antes de publicar | O responsável aprova as peças e publica. |
+
+Uma imagem reprovada na revisão vai como pedido novo, com a versão seguinte no `id`, na próxima rodada do agente. Se não puder esperar, o Claude refaz com outra fonte de `base/fontes-imagem.md`, como o Hugging Face ou o Pollinations.
 
 ## Pastas no Drive
 
@@ -48,8 +61,9 @@ O pedido traz a proporção e o tamanho desejado. Se o modelo não gerar esse ta
 
 ## Regras
 
-- Uma imagem por pedido.
-- O agente só aceita pedidos enviados pela conta `[e-mail a definir]` e com o assunto começando por `[CLT-PEDIDO]`. Ignora qualquer outro e-mail.
+- Um e-mail por agente por dia, com até 5 prompts (a cota diária do agente 01). Cada prompt é uma imagem, com o seu próprio `id`.
+- Cada imagem devolvida no e-mail de resposta leva o nome do seu `id`.
+- O agente só aceita pedidos enviados pela conta conectada ao Claude (remetente autorizado, ver `etapas-e-decisoes.md`) e com o assunto começando por `[CLT-PEDIDO]`. Ignora qualquer outro e-mail.
 - O agente usa o prompt exatamente como veio, sem acrescentar nem tirar nada.
 - A imagem original vai para `02_IMAGENS` sem edição, com o nome pedido.
 - Para refazer uma imagem, o Claude manda um pedido novo, com a versão seguinte no `id`.
@@ -75,20 +89,24 @@ Como cada regra se aplica no protocolo (proposta do Claude):
 
 ## Pedido (Claude para o agente)
 
-Assunto: `[CLT-PEDIDO] <id>`
+Assunto: `[CLT-PEDIDO] <data>_lote` (por exemplo, `[CLT-PEDIDO] 2026-11-05_lote`).
 
-Corpo em texto puro, um campo por linha. Tudo o que vem depois da linha `prompt:` é o prompt, escrito em blocos no formato da skill `storyboard-clt` (seção 3). A imagem de `referencia` é a `Image 1` do prompt.
+O corpo traz um bloco por imagem, até 5, cada um com o seu `id`. Texto puro, um campo por linha. Tudo o que vem depois da linha `prompt:` é o prompt, escrito no formato da skill `storyboard-clt` (seção 3). A imagem de `referencia` é a `Image 1` do prompt.
 
 ```
-id: 2026-11-05_reel_q1_v1
+lote: 2026-11-05_lote
 projeto: CLT Caótica
+pasta: 1zI7f3YdviDNdHY8HYcQCU6hHRAzFrVLm
+imagens: 5
+
+--- imagem 1 ---
+id: 2026-11-05_reel_q1_v1
 proporcao: 9:16
 largura: 1080
 altura: 1920
 formato: png
 semente: 2201
-referencia: <link do Drive da imagem âncora, ou "nenhuma">
-pasta: 1zI7f3YdviDNdHY8HYcQCU6hHRAzFrVLm
+referencia: <link da imagem âncora, ou "nenhuma">
 arquivo: 2026-11-05_reel_q1_v1.png
 prompt:
 Use: vertical 9:16 panel for an Instagram comic reel. Image 1 is the character reference.
@@ -98,27 +116,23 @@ Scene: ...
 Camera: ...
 Composition: ...
 Constraints: The image contains no text of any kind. ... No text, no letters, no words, no numbers, no speech balloons, no logos, no watermark.
+
+--- imagem 2 ---
+id: ...
+(mesmos campos)
 ```
 
 ## Resposta (agente para Claude)
 
-Na mesma conversa do pedido, com o assunto `[CLT-PRONTO] <id>`. Formato definido pelo responsável em 2026-11-04:
+Um e-mail só de resposta, na mesma conversa do lote, com o assunto `[CLT-PRONTO] <data>_lote`. Traz uma linha por imagem e o anexo de cada uma, com o nome do `id`:
 
 ```
-id: 2026-11-05_reel_q1_v1
-arquivo: 2026-11-05_reel_q1_v1.png
-projeto: CLT Caótica
-link: <link direto do arquivo no Google Drive>
-status: concluido
+lote: 2026-11-05_lote
+imagem 1: id 2026-11-05_reel_q1_v1 | arquivo 2026-11-05_reel_q1_v1.png | status: concluido
+imagem 2: id ... | arquivo ... | status: erro | motivo: ...
 ```
 
-- `id`: o ID do pedido.
-- `arquivo`: o nome exato da imagem salva.
-- `projeto`: o projeto do pedido.
-- `link`: o link direto da imagem no Google Drive.
-- `status`: `concluido`.
-
-Se der erro, o assunto é `[CLT-ERRO] <id>`, com `status: erro` e uma linha `motivo:` explicando o que deu errado.
+Anexos: `2026-11-05_reel_q1_v1.png`, e assim por diante. Se alguma imagem falhar, o `status` dela é `erro`, com o `motivo`, e as outras seguem normalmente.
 
 ## Do lado do Claude
 
@@ -129,7 +143,7 @@ Se der erro, o assunto é `[CLT-ERRO] <id>`, com `status: erro` e uma linha `mot
 
 - Os outros agentes, com o limite por dia, o modelo e se aceitam imagem de referência.
 - Onde guardar o e-mail de cada agente fora do repositório, por exemplo num arquivo em `04_CONTROLE`.
-- De qual conta saem os pedidos. O Gmail conectado ao Claude é de uma conta diferente da do Drive: ou o Gmail do Claude passa a ser a mesma conta do Drive, ou os agentes aceitam os pedidos vindos da conta conectada hoje.
+- A caixa do agente 01 é a conta pessoal do responsável. O endereço fica fora do repositório, por ser público. É nela que o agente recebe os pedidos e envia as respostas. Os pedidos saem da conta conectada ao Claude, que o agente precisa aceitar.
 - Se o uso proposto para `01_PEDIDOS`, `03_ENTREGAS` e `04_CONTROLE` está certo.
 - Como o Claude baixa a imagem para o ambiente. Pelo conector do Drive, a imagem chega como texto codificado. Falta testar com a primeira imagem real se isso funciona. Se não funcionar, as opções são liberar na rede do ambiente o endereço do VPS, com o agente mandando um link direto, ou liberar o download do Drive, com o arquivo compartilhado por link.
 - Como o Claude envia arquivos grandes, como os reels prontos, para `03_ENTREGAS`. O conector do Drive tem o mesmo limite.
