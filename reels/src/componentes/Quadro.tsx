@@ -3,6 +3,7 @@ import { AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame } f
 import { CORES, FONTE_MARCA, reticula } from "../marca";
 import type { Papel, Quadro as TipoQuadro } from "../tipos";
 import { Balao } from "./Balao";
+import { BaloesFalas } from "./BaloesFalas";
 import { PersonagemProvisoria } from "./PersonagemProvisoria";
 
 const FUNDO: Record<Papel, string> = {
@@ -10,6 +11,7 @@ const FUNDO: Record<Papel, string> = {
   interrupcao: CORES.amarelo,
   escalada: CORES.magenta,
   punchline: CORES.amarelo,
+  narracao: CORES.amarelo,
 };
 
 const limitar = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -124,7 +126,7 @@ export const Quadro: React.FC<{ quadro: TipoQuadro; duracao: number }> = ({ quad
         </div>
       ) : null}
 
-      <Balao quadro={quadro} />
+      {quadro.falas ? <BaloesFalas falas={quadro.falas} duracao={duracao} /> : <Balao quadro={quadro} />}
 
       {clarao > 0 ? <AbsoluteFill style={{ backgroundColor: CORES.branco, opacity: clarao }} /> : null}
     </AbsoluteFill>

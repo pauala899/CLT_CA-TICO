@@ -1,4 +1,4 @@
-export type Papel = "expectativa" | "interrupcao" | "escalada" | "punchline";
+export type Papel = "expectativa" | "interrupcao" | "escalada" | "punchline" | "narracao";
 
 export type Expressao = "calma" | "surpresa" | "panico" | "exausta";
 
@@ -15,6 +15,16 @@ export type Som = {
   emSeg: number;
   // De 0 a 1. Sem ele, volume 1.
   volume?: number;
+};
+
+export type TipoFala = "fala" | "pensa" | "narracao";
+
+// Uma fala dentro de um quadro. Cada balão aparece em inicioSeg e sai quando o próximo começa.
+export type FalaQuadro = {
+  tipo: TipoFala;
+  quem: "ela" | "chefe" | "colega" | "narrador";
+  texto: string;
+  inicioSeg: number;
 };
 
 export type Quadro = {
@@ -39,6 +49,8 @@ export type Quadro = {
   imagemDesce?: number;
   // Vozes e efeitos da cena.
   sons?: Som[];
+  // Várias falas no mesmo quadro (fala, pensamento e narração). Se existir, substitui fala/quemFala/balao.
+  falas?: FalaQuadro[];
 };
 
 export type Reel = {

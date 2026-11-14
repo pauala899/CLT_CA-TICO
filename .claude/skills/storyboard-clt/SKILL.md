@@ -57,6 +57,8 @@ Movimentos sugeridos por papel, feitos em motion graphics no Remotion:
 
 ### 3. Prompts de imagem
 
+> **Atualização de 2026-11-07:** para o Pollinations (Z-Image-Turbo), o formato mudou por decisão do responsável: a descrição fixa da personagem vem na frente e depois o cenário, com semente única. O texto exato está em `base/prompt-personagem.md`. Os blocos rotulados abaixo (`Use`, `Style`, `Character`...) ficam como referência para outros geradores, até o ajuste desta skill.
+
 Os prompts seguem o jeito de escrever que funciona no Nano Banana (Gemini) e no GPT Image 2. São frases completas que descrevem a cena, não listas de palavras-chave, separadas em blocos com rótulo. Diga o que deve aparecer no lugar de só dizer o que não deve: "o terço de cima é uma área amarela lisa e vazia" funciona melhor que "sem nada no topo".
 
 **Blocos de todo prompt, nesta ordem:**
