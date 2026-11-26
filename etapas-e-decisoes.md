@@ -68,6 +68,13 @@ Links do Drive:
 - dias: https://drive.google.com/drive/folders/1gbVy2pF_IOKkHO1ah4vKdijPce7NPyfm
 - base: https://drive.google.com/drive/folders/14kXF_S5AlTySF_c-bmq9AaxZg74-jxvR
 
+Decisões de 2026-11-26 sobre a série viajante do tempo (pasta "projeto" dentro de "viajante tempo", no Meu Drive):
+
+| Item | Decisão |
+|------|---------|
+| Padrão por tema | Cada tema pronto tem 1 reel e 5 stories, confirmado pelo responsável em 2026-11-26. Os roteiros de stories atuais têm 3 por episódio, então faltam 2 por tema. |
+| Estrutura de pastas | Igual à da CLT Caótica: uma pasta `dia NN` por dia (01, 02, 03...), com `MEMES`, `REELS` e `STORIES` em maiúsculas, e a planilha de roteiro no nível do dia. |
+
 ## Pendente
 
 | Item | Situação |
